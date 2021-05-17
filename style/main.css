@@ -796,7 +796,8 @@ section {
   align-items: center; }
 
 .head-section-left {
-  max-width: 683px; }
+  max-width: 683px;
+  width: 100%; }
 
 .head-section-img {
   display: block;
