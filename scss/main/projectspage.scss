@@ -1,0 +1,58 @@
+.projects-section-headline-box {
+    padding: 40px 0 20px 0;
+}
+
+.projects-section-headline {
+    font-family: 'Playfair Display';
+    font-size: $fontsize40;
+    color: $color01-blck;
+}
+
+.projects-section-box {
+    position: relative;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    .registration-button-box {
+        position: absolute;
+        bottom: -16px;
+        right: 170px;
+    }
+}
+
+.project-section-mini-headline {
+    margin-bottom: 20px;
+    .mini-headline-txt {
+        font-family: 'Poppins Bold', 'FiraGO Bold';
+        font-size: $fontsize25;
+        color: $color01-blck;
+        margin-bottom: 10px;
+    }
+    .mini-headline-txt-mini {
+        font-family: 'Poppins Thin', 'FiraGO Light';
+        color: $color01-blck;
+        font-size: $fontsize14;
+    }
+}
+
+.mini-headline-description-box{
+    margin-bottom: 40px;
+    .mini-headline-description {
+        font-family: 'Poppins Medium', 'FiraGO Medium';
+        font-size: $fontsize20;
+        color: $color01-blck;
+    }
+}
+
+.competition-description-area {
+    width: 100%;
+    .competition-description-txt {
+        font-family: 'Poppins Thin', 'FiraGO Light';
+        font-size: $fontsize16;
+        color: $color01-blck;
+        line-height: initial;
+    }
+
+}
+
+
+

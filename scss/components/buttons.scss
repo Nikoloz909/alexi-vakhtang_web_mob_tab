@@ -1,0 +1,115 @@
+// Language switch button
+
+.header-switch-btn {
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 15px;
+    .switch-btn {
+        font-family: 'Poppins Bold';
+        font-size: $fontsize14;
+        text-align: center;
+        opacity: 50%;
+        color: $color01-blck;
+        cursor: pointer;
+    }
+    .switch-btn-line {
+        color: $color01-blck;
+        font-size: $fontsize14;
+        font-family: 'Poppins Bold';
+    }
+
+    .btn--active {
+        opacity: 100%;
+    }
+}
+
+
+
+
+
+
+
+.article-main-btn {
+    font-family: 'Poppins Medium', 'FiraGO Bold';
+    font-size: $fontsize18;
+    transition: all .2s;
+    position: relative;
+    text-transform: uppercase;
+    &:hover{
+        transform: translate(7%, 10%);
+        max-width: 400px;
+        transition: all .2s;
+    }
+}  
+
+.btn--box {
+    display: flex;
+    justify-content: flex-start;
+    margin: 40px 0 25px 0;
+    padding: 10px 0;
+}
+
+.article-btn {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.first-article-line {
+    display: none;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid $color01-blck;
+    width: 220px;
+    left: 0;
+    top: 83%;
+    transition: all .2s;
+    
+}
+.arrow-line {
+    position: absolute;
+    left: 102%;
+    top: 60%;
+    transform: translate(0, -50%);
+}
+
+.first-line {
+    display: block;
+    border-top: 1px solid #040F16;
+    width:500%;
+    position: absolute;
+    top: 60%;
+    left: -493%;
+    transform: translate(0, -50%);
+}
+
+.first-article-line-two {
+    display: block;
+   border-top: 1px solid #040F16;
+    width: 60px;
+    position: relative;
+}
+
+.arrow {
+    position: absolute;
+    left: 100%;
+    transform: translate(0, -50%);
+}
+
+
+
+// register button
+
+
+.registerbtn {
+    background-color: $color01-blck;
+    padding: 7px 70px;
+    color: #FBFBFF;
+    font-family:'Poppins Medium', 'BPG Nino Mtavruli Bold';
+    cursor: pointer;
+    text-transform: lowercase;
+}

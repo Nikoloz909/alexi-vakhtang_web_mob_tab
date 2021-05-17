@@ -1,0 +1,1409 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+a:hover {
+  color: #707070;
+  text-decoration: none; }
+
+* {
+  box-sizing: border-box; }
+
+button, textarea, input:focus {
+  outline: 0;
+  border: 0;
+  resize: none; }
+
+@font-face {
+  font-family: 'Poppins Bold';
+  src: url("../fonts/Poppins-Bold.eot");
+  src: url("../fonts/Poppins-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Bold.woff2") format("woff2"), url("../fonts/Poppins-Bold.woff") format("woff"), url("../fonts/Poppins-Bold.ttf") format("truetype"), url("../fonts/Poppins-Bold.svg#Poppins-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins Regular';
+  src: url("../fonts/Poppins-Regular.eot");
+  src: url("../fonts/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins-Regular.woff") format("woff"), url("../fonts/Poppins-Regular.ttf") format("truetype"), url("../fonts/Poppins-Regular.svg#Poppins-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins Black';
+  src: url("../fonts/Poppins-Black.eot");
+  src: url("../fonts/Poppins-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Black.woff2") format("woff2"), url("../fonts/Poppins-Black.woff") format("woff"), url("../fonts/Poppins-Black.ttf") format("truetype"), url("../fonts/Poppins-Black.svg#Poppins-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins Medium';
+  src: url("../fonts/Poppins-Medium.eot");
+  src: url("../fonts/Poppins-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Medium.woff2") format("woff2"), url("../fonts/Poppins-Medium.woff") format("woff"), url("../fonts/Poppins-Medium.ttf") format("truetype"), url("../fonts/Poppins-Medium.svg#Poppins-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins SemiBold';
+  src: url("../fonts/Poppins-SemiBold.eot");
+  src: url("../fonts/Poppins-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-SemiBold.woff2") format("woff2"), url("../fonts/Poppins-SemiBold.woff") format("woff"), url("../fonts/Poppins-SemiBold.ttf") format("truetype"), url("../fonts/Poppins-SemiBold.svg#Poppins-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO Bold';
+  src: url("../fonts/FiraGO-Bold.eot");
+  src: url("../fonts/FiraGO-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Bold.woff2") format("woff2"), url("../fonts/FiraGO-Bold.woff") format("woff"), url("../fonts/FiraGO-Bold.ttf") format("truetype"), url("../fonts/FiraGO-Bold.svg#FiraGO-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO ExtraBold';
+  src: url("../fonts/FiraGO-ExtraBold.eot");
+  src: url("../fonts/FiraGO-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-ExtraBold.woff2") format("woff2"), url("../fonts/FiraGO-ExtraBold.woff") format("woff"), url("../fonts/FiraGO-ExtraBold.ttf") format("truetype"), url("../fonts/FiraGO-ExtraBold.svg#FiraGO-ExtraBold") format("svg");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO Heavy';
+  src: url("../fonts/FiraGO-Heavy.eot");
+  src: url("../fonts/FiraGO-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Heavy.woff2") format("woff2"), url("../fonts/FiraGO-Heavy.woff") format("woff"), url("../fonts/FiraGO-Heavy.ttf") format("truetype"), url("../fonts/FiraGO-Heavy.svg#FiraGO-Heavy") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO Medium';
+  src: url("../fonts/FiraGO-Medium.eot");
+  src: url("../fonts/FiraGO-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Medium.woff2") format("woff2"), url("../fonts/FiraGO-Medium.woff") format("woff"), url("../fonts/FiraGO-Medium.ttf") format("truetype"), url("../fonts/FiraGO-Medium.svg#FiraGO-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO Regular';
+  src: url("../fonts/FiraGO-Regular.eot");
+  src: url("../fonts/FiraGO-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Regular.woff2") format("woff2"), url("../fonts/FiraGO-Regular.woff") format("woff"), url("../fonts/FiraGO-Regular.ttf") format("truetype"), url("../fonts/FiraGO-Regular.svg#FiraGO-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO SemiBold';
+  src: url("../fonts/FiraGO-SemiBold.eot");
+  src: url("../fonts/FiraGO-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-SemiBold.woff2") format("woff2"), url("../fonts/FiraGO-SemiBold.woff") format("woff"), url("../fonts/FiraGO-SemiBold.ttf") format("truetype"), url("../fonts/FiraGO-SemiBold.svg#FiraGO-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO Thin';
+  src: url("../fonts/FiraGO-Thin.eot");
+  src: url("../fonts/FiraGO-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Thin.woff2") format("woff2"), url("../fonts/FiraGO-Thin.woff") format("woff"), url("../fonts/FiraGO-Thin.ttf") format("truetype"), url("../fonts/FiraGO-Thin.svg#FiraGO-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url("../fonts/PlayfairDisplay-Black.eot");
+  src: url("../fonts/PlayfairDisplay-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/PlayfairDisplay-Black.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Black.woff") format("woff"), url("../fonts/PlayfairDisplay-Black.ttf") format("truetype"), url("../fonts/PlayfairDisplay-Black.svg#PlayfairDisplay-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'BPG Nino Mtavruli';
+  src: url("../fonts/bpg-nino-mtavruli-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/bpg-nino-mtavruli-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bpg-nino-mtavruli-webfont.woff2") format("woff2"), url("../fonts/bpg-nino-mtavruli-webfont.woff") format("woff"), url("../fonts/bpg-nino-mtavruli-webfont.ttf") format("truetype"), url("../fonts/bpg-nino-mtavruli-webfont.svg#bpg_nino_mtavruliregular") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'BPG Nino Mtavruli Bold';
+  src: url("../fonts/BPGNinoMtavruli-Bold.eot");
+  src: url("../fonts/BPGNinoMtavruli-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/BPGNinoMtavruli-Bold.woff2") format("woff2"), url("../fonts/BPGNinoMtavruli-Bold.woff") format("woff"), url("../fonts/BPGNinoMtavruli-Bold.ttf") format("truetype"), url("../fonts/BPGNinoMtavruli-Bold.svg#BPGNinoMtavruli-Bold") format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO Book';
+  src: url("../fonts/FiraGO-Book.eot");
+  src: url("../fonts/FiraGO-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Book.woff2") format("woff2"), url("../fonts/FiraGO-Book.woff") format("woff"), url("../fonts/FiraGO-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO BoldItalic';
+  src: url("../fonts/FiraGO-BoldItalic.eot");
+  src: url("../fonts/FiraGO-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-BoldItalic.woff2") format("woff2"), url("../fonts/FiraGO-BoldItalic.woff") format("woff"), url("../fonts/FiraGO-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO Light';
+  src: url("../fonts/FiraGO-Light.eot");
+  src: url("../fonts/FiraGO-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Light.woff2") format("woff2"), url("../fonts/FiraGO-Light.woff") format("woff"), url("../fonts/FiraGO-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO LightItalic';
+  src: url("../fonts/FiraGO-LightItalic.eot");
+  src: url("../fonts/FiraGO-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-LightItalic.woff2") format("woff2"), url("../fonts/FiraGO-LightItalic.woff") format("woff"), url("../fonts/FiraGO-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Playfair Display BlackItalic';
+  src: url("../fonts/PlayfairDisplay-BlackItalic.eot");
+  src: url("../fonts/PlayfairDisplay-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PlayfairDisplay-BlackItalic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-BlackItalic.woff") format("woff"), url("../fonts/PlayfairDisplay-BlackItalic.ttf") format("truetype"), url("../fonts/PlayfairDisplay-BlackItalic.svg#PlayfairDisplay-BlackItalic") format("svg");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Playfair Display Regular';
+  src: url("../fonts/PlayfairDisplay-Regular.eot");
+  src: url("../fonts/PlayfairDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Regular.woff") format("woff"), url("../fonts/PlayfairDisplay-Regular.ttf") format("truetype"), url("../fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Playfair Display BoldItalic';
+  src: url("../fonts/PlayfairDisplay-BoldItalic.eot");
+  src: url("../fonts/PlayfairDisplay-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PlayfairDisplay-BoldItalic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-BoldItalic.woff") format("woff"), url("../fonts/PlayfairDisplay-BoldItalic.ttf") format("truetype"), url("../fonts/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Playfair Display Italic';
+  src: url("../fonts/PlayfairDisplay-Italic.eot");
+  src: url("../fonts/PlayfairDisplay-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/PlayfairDisplay-Italic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Italic.woff") format("woff"), url("../fonts/PlayfairDisplay-Italic.ttf") format("truetype"), url("../fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Playfair Display Bold';
+  src: url("../fonts/PlayfairDisplay-Bold.eot");
+  src: url("../fonts/PlayfairDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PlayfairDisplay-Bold.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Bold.woff") format("woff"), url("../fonts/PlayfairDisplay-Bold.ttf") format("truetype"), url("../fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins Light';
+  src: url("../fonts/Poppins-Light.eot");
+  src: url("../fonts/Poppins-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Light.woff2") format("woff2"), url("../fonts/Poppins-Light.woff") format("woff"), url("../fonts/Poppins-Light.ttf") format("truetype"), url("../fonts/Poppins-Light.svg#Poppins-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins Italic';
+  src: url("../fonts/Poppins-Italic.eot");
+  src: url("../fonts/Poppins-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Italic.woff2") format("woff2"), url("../fonts/Poppins-Italic.woff") format("woff"), url("../fonts/Poppins-Italic.ttf") format("truetype"), url("../fonts/Poppins-Italic.svg#Poppins-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins BoldItalic';
+  src: url("../fonts/Poppins-BoldItalic.eot");
+  src: url("../fonts/Poppins-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-BoldItalic.woff2") format("woff2"), url("../fonts/Poppins-BoldItalic.woff") format("woff"), url("../fonts/Poppins-BoldItalic.ttf") format("truetype"), url("../fonts/Poppins-BoldItalic.svg#Poppins-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap; }
+
+.article-headline-txt {
+  font-size: 34px;
+  font-family: 'Poppins Bold', 'BPG Nino Mtavruli Bold';
+  color: #040F16;
+  text-transform: uppercase; }
+
+.head-section-heading-txt, .personal-pg-head-txt, .foundation-headline, .contact-page-headline {
+  font-family: 'Poppins Bold', 'BPG Nino Mtavruli Bold';
+  font-size: 40px;
+  color: #040F16; }
+
+.box-container {
+  max-width: 1010px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px 0 10px; }
+
+.grey-box {
+  background-color: #EFEFF6;
+  width: 100%;
+  padding: 20px 0 20px 0; }
+
+.header-switch-btn {
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 15px; }
+  .header-switch-btn .switch-btn {
+    font-family: 'Poppins Bold';
+    font-size: 14px;
+    text-align: center;
+    opacity: 50%;
+    color: #040F16;
+    cursor: pointer; }
+  .header-switch-btn .switch-btn-line {
+    color: #040F16;
+    font-size: 14px;
+    font-family: 'Poppins Bold'; }
+  .header-switch-btn .btn--active {
+    opacity: 100%; }
+
+.article-main-btn {
+  font-family: 'Poppins Medium', 'FiraGO Bold';
+  font-size: 18px;
+  transition: all .2s;
+  position: relative;
+  text-transform: uppercase; }
+  .article-main-btn:hover {
+    transform: translate(7%, 10%);
+    max-width: 400px;
+    transition: all .2s; }
+
+.btn--box {
+  display: flex;
+  justify-content: flex-start;
+  margin: 40px 0 25px 0;
+  padding: 10px 0; }
+
+.article-btn {
+  position: relative;
+  display: flex;
+  justify-content: flex-start; }
+
+.first-article-line {
+  display: none;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid #040F16;
+  width: 220px;
+  left: 0;
+  top: 83%;
+  transition: all .2s; }
+
+.arrow-line {
+  position: absolute;
+  left: 102%;
+  top: 60%;
+  transform: translate(0, -50%); }
+
+.first-line {
+  display: block;
+  border-top: 1px solid #040F16;
+  width: 500%;
+  position: absolute;
+  top: 60%;
+  left: -493%;
+  transform: translate(0, -50%); }
+
+.first-article-line-two {
+  display: block;
+  border-top: 1px solid #040F16;
+  width: 60px;
+  position: relative; }
+
+.arrow {
+  position: absolute;
+  left: 100%;
+  transform: translate(0, -50%); }
+
+.registerbtn {
+  background-color: #040F16;
+  padding: 7px 70px;
+  color: #FBFBFF;
+  font-family: 'Poppins Medium', 'BPG Nino Mtavruli Bold';
+  cursor: pointer;
+  text-transform: lowercase; }
+
+.article-headline-txt {
+  font-size: 34px;
+  font-family: 'Poppins Bold', 'BPG Nino Mtavruli Bold';
+  color: #040F16;
+  text-transform: uppercase; }
+
+.head-section-heading-txt, .personal-pg-head-txt, .foundation-headline, .contact-page-headline {
+  font-family: 'Poppins Bold', 'BPG Nino Mtavruli Bold';
+  font-size: 40px;
+  color: #040F16; }
+
+.header-mn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.815);
+  backdrop-filter: blur(5px); }
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.header-content-left .header-main-logo {
+  cursor: pointer; }
+
+.header-content-left .logo {
+  font-size: 34px;
+  font-family: 'Playfair Display Bold';
+  color: #040F16; }
+
+.header-menu {
+  padding: 10px 5px 0 5px; }
+
+.header-navbar {
+  margin-top: 15px; }
+
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.navbar-li {
+  padding-bottom: 37px;
+  position: relative; }
+  .navbar-li:hover .navbar-menu-dropdown, .navbar-li:active .navbar-menu-dropdown {
+    display: block; }
+
+.navbar-txt:link, .navbar-txt:visited {
+  font-size: 14px;
+  color: #040F16;
+  padding: 8px 15px 0 15px;
+  text-transform: uppercase;
+  border-top: 3px solid transparent;
+  letter-spacing: 1px;
+  font-family: 'Poppins Bold', 'FiraGO Bold';
+  transition: all .2s; }
+
+.navbar-txt:hover, .navbar-txt:active {
+  border-top: 3px solid #040F16;
+  color: #040F16;
+  transition: all .2s; }
+
+.responsive-header-container {
+  display: none; }
+
+.navbar-menu-dropdown {
+  background-color: #FBFBFF;
+  width: 248px;
+  display: none;
+  position: absolute;
+  top: 53px;
+  left: -40%;
+  list-style: inside; }
+
+.navbar-li-dropdown {
+  margin: 15px 0 15px 20px; }
+
+.navbar-txt-dropdown:link, .navbar-txt-dropdown:visited {
+  font-size: 16px;
+  color: #707070;
+  padding: 8px 0;
+  text-transform: uppercase;
+  border-top: 3px solid transparent;
+  letter-spacing: 1px;
+  font-family: 'Poppins Medium', 'FiraGO Medium'; }
+
+.navbar-txt-dropdown:hover, .navbar-txt-dropdown:active {
+  color: #040F16; }
+
+.responsive-header-container {
+  display: none;
+  height: 80px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(3px);
+  position: fixed;
+  top: 0;
+  z-index: 110; }
+  .responsive-header-container .nav-bar {
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    right: 100%;
+    height: 100vh;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99; }
+  .responsive-header-container .toggle {
+    right: 0; }
+
+.responsive-nav-dropdown {
+  display: none;
+  padding: 5px;
+  margin: 5px 0 5px 0; }
+
+.responsive-navbar-menu {
+  width: 100%; }
+
+.responsive-navbar-li {
+  text-align: start;
+  padding: 10px 0 10px 20px;
+  margin-bottom: 5px;
+  border-top: 1px solid rgba(112, 112, 112, 0.288);
+  border-bottom: 1px solid rgba(112, 112, 112, 0.288); }
+  .responsive-navbar-li:hover .responsive-nav-dropdown, .responsive-navbar-li:active .responsive-nav-dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: inside; }
+
+.responsive-navbar-li-txt:link, .responsive-navbar-li-txt:visited {
+  font-size: 14px;
+  color: #040F16;
+  padding-bottom: 8px 0;
+  text-transform: uppercase;
+  border-top: 3px solid transparent;
+  letter-spacing: 1px;
+  font-family: 'Poppins Bold';
+  transition: all .2s; }
+
+.responsive-dropdown-li {
+  margin: 5px 0 5px 0; }
+
+.responsive-li-txt:link, .responsive-li-txt:visited {
+  font-size: 12px;
+  color: #707070;
+  padding: 8px 0;
+  letter-spacing: 1px;
+  font-family: 'Poppins Medium';
+  list-style: inside; }
+
+.responsive-li-txt:hover, .responsive-li-txt:active {
+  color: #040F16; }
+
+/* Burger icon styles */
+.toggle-menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2px 2px 2px 3px;
+  cursor: pointer;
+  z-index: 110; }
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: #000000;
+  transition: transform 0.2s ease-out; }
+
+.toggle .line1 {
+  transform: scale(0.9) rotate(-45deg) translate(-6px, 4px); }
+
+.toggle .line2 {
+  display: none; }
+
+.toggle .line3 {
+  transform: scale(0.9) rotate(45deg) translate(-6px, -4px); }
+
+.footer-main {
+  background-color: #040F16; }
+
+.footer-respo {
+  background-color: #040F16; }
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0 auto;
+  max-width: 1010px;
+  width: 100%; }
+
+.footer-txt {
+  font-size: 14px;
+  font-family: 'Poppins Medium', 'FiraGO Medium';
+  color: #FBFBFF; }
+
+.footer-img {
+  width: 45px;
+  margin-bottom: 30px; }
+
+.item {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.item--1 {
+  border-right: 1px solid #1E272E;
+  transition: all .2s;
+  padding: 15px 35px 75px 10px;
+  text-align: center; }
+  .item--1:hover {
+    background-color: #1E272E;
+    transition: all .2s; }
+
+.item--2 {
+  border-right: 1px solid #1E272E;
+  transition: all .2s;
+  padding: 15px 75px 75px 75px;
+  text-align: center; }
+  .item--2:hover {
+    background-color: #1E272E;
+    transition: all .2s; }
+
+.item--3 {
+  border-right: 1px solid #1E272E;
+  transition: all .2s;
+  padding: 15px 75px 75px 75px;
+  text-align: center; }
+  .item--3:hover {
+    background-color: #1E272E;
+    transition: all .2s; }
+
+.item--4 {
+  background-color: #1E272E;
+  padding: 15px 30px 75px 30px;
+  text-align: center; }
+
+.footer-responsive-container {
+  display: none; }
+
+.footer-top-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all .1s; }
+  .footer-top-wrapper:hover {
+    background-color: #1E272E;
+    transition: all .1s; }
+
+.top-main-content {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px 0 20px 25px;
+  align-items: center; }
+
+.respo-footer-img {
+  width: 45px;
+  margin-right: 25px; }
+
+.footer-bottom-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1E272E;
+  padding: 20px 0; }
+
+.respo-footer-txt {
+  font-size: 12px;
+  font-family: 'Poppins Medium', 'FiraGO Medium';
+  color: #FBFBFF; }
+
+.article-headline-txt {
+  font-size: 34px;
+  font-family: 'Poppins Bold', 'BPG Nino Mtavruli Bold';
+  color: #040F16;
+  text-transform: uppercase; }
+
+.head-section-heading-txt, .personal-pg-head-txt, .foundation-headline, .contact-page-headline {
+  font-family: 'Poppins Bold', 'BPG Nino Mtavruli Bold';
+  font-size: 40px;
+  color: #040F16; }
+
+body {
+  margin: 80px 0 0;
+  width: 100%; }
+
+section {
+  background-image: url("../images/body-bg-img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  padding-bottom: 50px; }
+
+.selected {
+  border-top: 3px solid #040F16; }
+
+.selected-nav-li {
+  border-top: 3px solid #040F16;
+  color: #040F16;
+  padding: 8px 15px 0 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'Poppins Bold', 'FiraGO Bold'; }
+  .selected-nav-li:hover, .selected-nav-li:active {
+    color: #040F16; }
+
+.background-images-section {
+  display: flex;
+  position: relative;
+  margin: 0;
+  padding: 0; }
+
+.bg-images-left,
+.bg-images-right {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.vakhtang-img,
+.alex-img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  filter: brightness(50%); }
+
+.main-section-heading {
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  max-width: 670px;
+  width: 100%;
+  text-align: center; }
+
+.main-heading-txt {
+  font-size: 40px;
+  color: #FBFBFF;
+  line-height: initial;
+  padding: 5px;
+  font-family: 'Playfair Display', 'BPG Nino Mtavruli Bold'; }
+
+.heading-txt-border {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: -100%;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  border-top: 1px solid #FBFBFF; }
+
+.firt-article-box-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+
+.article-headline {
+  margin: 33px 0 0; }
+
+.article-main-para {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between; }
+
+.main-para-row {
+  max-width: 450px;
+  width: 100%; }
+  .main-para-row .nonlist {
+    margin-bottom: 20px;
+    font-family: 'Poppins Medium'; }
+
+.article-main-txt {
+  font-size: 14px;
+  font-family: 'Poppins Regular';
+  line-height: initial; }
+
+.first-article-nav {
+  margin: 20px auto 23px auto;
+  max-width: 1010px;
+  width: 100%;
+  padding: 20px 0 20px 0;
+  background-color: transparent; }
+
+.first-article-navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.first-article-navbar-txt {
+  font-family: 'Playfair Display', 'FiraGO Regular';
+  font-size: 40px;
+  color: #040F16;
+  border-bottom: 1px solid transparent;
+  transition: all .2s; }
+  .first-article-navbar-txt:hover, .first-article-navbar-txt:active {
+    border-bottom: 1px solid #040F16;
+    transition: all .2s;
+    color: #040F16; }
+
+.personal-page-head-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.head-section-left {
+  max-width: 683px; }
+
+.head-section-img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  filter: brightness(50%); }
+
+.head-section-heading-box {
+  border-bottom: 2px solid #040F16;
+  padding: 0 30px 20px 60px; }
+
+.personal-page-box {
+  margin-top: 60px; }
+
+.personal-pg-txt-box {
+  margin-top: 20px;
+  width: 100%; }
+
+.personal-pg-txt {
+  font-size: 16px;
+  font-family: 'Poppins Light', 'BPG Nino Mtavruli Bold';
+  color: #040F16;
+  margin-bottom: 30px; }
+
+.personal-page-photos {
+  margin-top: 44px; }
+
+.photos-headline {
+  padding: 30px 0 20px 0; }
+
+.personal-pg-head-txt {
+  text-transform: uppercase; }
+
+.presse-section {
+  margin-top: 45px; }
+
+.presse-list-txt {
+  width: 100%; }
+  .presse-list-txt .presse-list-li {
+    font-size: 16px;
+    font-family: 'Poppins Light';
+    color: #040F16;
+    text-align: left;
+    margin-bottom: 30px; }
+
+.presse-list-li-after {
+  font-family: 'Poppins Medium';
+  font-size: 16px;
+  color: #040F16;
+  margin: 10px 0 0 20px; }
+
+.manuscripts-wrapper {
+  margin-top: 44px; }
+
+.manuscripts-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px; }
+
+.manuscript-head-txt {
+  font-family: 'Poppins BoldItalic', 'FiraGO BoldItalic';
+  font-size: 25px;
+  color: #040F16;
+  margin: 10px 0; }
+
+.manuscript-bot-txt {
+  font-size: 18px;
+  color: #040F16;
+  font-family: 'Poppins Italic', 'FiraGO LightItalic'; }
+
+.audio-samples-section {
+  margin-top: 44px; }
+  .audio-samples-section .audio-samples-content {
+    width: 100%; }
+  .audio-samples-section .audio-samples-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px; }
+  .audio-samples-section .audio-samples-heading {
+    font-family: 'Poppins Medium';
+    font-size: 16px;
+    color: #040F16;
+    text-transform: uppercase; }
+  .audio-samples-section .audio-samples-ul {
+    margin-top: 7px; }
+  .audio-samples-section .audio-samples-li {
+    font-family: 'Poppins Light';
+    font-size: 16px;
+    color: #040F16;
+    line-height: initial;
+    text-transform: none; }
+
+.manuscripts-page-headline {
+  max-width: 1010px;
+  width: 100%;
+  margin: 15px auto 15px auto; }
+
+.manuscripts-pg-txt {
+  font-family: 'Poppins Regular';
+  font-size: 30px;
+  color: #040F16;
+  text-decoration: underline; }
+
+.foundation-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.foundation-heading-box {
+  border-bottom: 2px solid #040F16;
+  padding: 0 30px 20px 60px; }
+
+.foundation-section-img {
+  width: 100%; }
+
+.about-us-txt {
+  font-size: 16px;
+  font-family: 'Poppins Light', 'FiraGO Light';
+  color: #040F16;
+  line-height: initial; }
+
+.about-us-ul {
+  margin-top: 40px; }
+
+.team-section {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.team-section-img {
+  margin-right: 20px; }
+
+.team-section-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+
+.team-section-headline {
+  font-size: 25px;
+  font-family: 'Poppins BoldItalic', 'FiraGO BoldItalic';
+  color: #040F16; }
+
+.team-section-text-area {
+  margin-top: 20px;
+  font-family: 'Poppins Italic', 'FiraGO Book';
+  font-size: 18px;
+  color: #040F16; }
+
+.team-section-responsive {
+  display: none; }
+
+.carousel {
+  align-items: center;
+  display: flex;
+  margin: 2rem auto;
+  overflow: hidden;
+  position: relative;
+  width: 248px; }
+  .carousel__images {
+    display: flex;
+    transition: 0.25s; }
+    .carousel__images img {
+      border-radius: 5px;
+      width: 248px; }
+  .carousel .team-member-name {
+    font-size: 25px;
+    font-family: 'Poppins BoldItalic', 'FiraGO BoldItalic';
+    color: #040F16;
+    margin-bottom: 10px;
+    width: 248px;
+    padding: 0 5px; }
+  .carousel .team-member-bio-para {
+    font-family: 'Poppins Italic', 'FiraGO BoldItalic';
+    font-size: 12px;
+    color: #040F16;
+    width: 248px;
+    padding: 0 5px; }
+  .carousel__button {
+    background: #040F16;
+    border: 0;
+    border-radius: 50%;
+    color: #FBFBFF;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 3rem;
+    opacity: 0.25;
+    position: absolute;
+    transition: opacity 0.25s;
+    width: 3rem;
+    z-index: 1; }
+    .carousel__button.previous {
+      left: 5px;
+      top: 100px; }
+    .carousel__button.next {
+      right: 5px;
+      top: 100px; }
+    .carousel__button:hover {
+      opacity: 0.5; }
+
+.projects-section-headline-box {
+  padding: 40px 0 20px 0; }
+
+.projects-section-headline {
+  font-family: 'Playfair Display';
+  font-size: 40px;
+  color: #040F16; }
+
+.projects-section-box {
+  position: relative;
+  padding-bottom: 50px;
+  margin-bottom: 50px; }
+  .projects-section-box .registration-button-box {
+    position: absolute;
+    bottom: -16px;
+    right: 170px; }
+
+.project-section-mini-headline {
+  margin-bottom: 20px; }
+  .project-section-mini-headline .mini-headline-txt {
+    font-family: 'Poppins Bold', 'FiraGO Bold';
+    font-size: 25px;
+    color: #040F16;
+    margin-bottom: 10px; }
+  .project-section-mini-headline .mini-headline-txt-mini {
+    font-family: 'Poppins Thin', 'FiraGO Light';
+    color: #040F16;
+    font-size: 14px; }
+
+.mini-headline-description-box {
+  margin-bottom: 40px; }
+  .mini-headline-description-box .mini-headline-description {
+    font-family: 'Poppins Medium', 'FiraGO Medium';
+    font-size: 20px;
+    color: #040F16; }
+
+.competition-description-area {
+  width: 100%; }
+  .competition-description-area .competition-description-txt {
+    font-family: 'Poppins Thin', 'FiraGO Light';
+    font-size: 16px;
+    color: #040F16;
+    line-height: initial; }
+
+.contact-page-head {
+  text-align: center;
+  padding: 25px 0 0; }
+
+.contact-form-section {
+  padding: 0 0 25px; }
+
+.contact-form-section {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #FFF;
+  max-width: 850px;
+  width: 100%; }
+
+.form-name {
+  width: 420px;
+  height: 36px;
+  margin: 16px auto;
+  max-width: 100%;
+  max-height: 100%; }
+
+.form-email {
+  width: 768px;
+  height: 36px;
+  margin: 16px auto;
+  max-width: 100%;
+  max-height: 100%; }
+
+.form-message {
+  width: 768px;
+  height: 191px;
+  margin: 16px auto;
+  max-width: 100%;
+  max-height: 100%; }
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+  border-radius: 3px;
+  border: 2px solid rgba(151, 146, 146, 0.651);
+  resize: none; }
+
+.email-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 0px 25px 0px; }
+
+.email-txt {
+  font-size: 14px;
+  font-family: 'Poppins Medium';
+  color: #707070;
+  margin: 30px 0 0; }
+
+.additional-info-box {
+  justify-content: center;
+  display: flex;
+  margin: 45px 0 37px 0; }
+
+.additional-info-section {
+  display: flex;
+  align-items: center;
+  margin-right: 70px; }
+
+.add-info-img {
+  max-width: 45px;
+  width: 100%;
+  margin-right: 15px; }
+
+.phone-number {
+  color: #040F16;
+  font-size: 18px;
+  font-family: 'Poppins Medium';
+  cursor: pointer; }
+
+.location-txt {
+  color: #040F16;
+  font-size: 18px;
+  font-family: 'Poppins Medium'; }
+
+.gallery-headline {
+  font-family: 'Playfair Display';
+  color: #040F16;
+  font-size: 40px;
+  margin-bottom: 20px; }
+
+.showcase-headline {
+  font-family: 'Poppins Regular';
+  font-size: 30px;
+  color: #040F16;
+  text-decoration: underline;
+  margin-bottom: 30px; }
+
+.gallery-showcase {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 0;
+  padding-inline-start: 0px;
+  margin-block-end: 0;
+  margin-block-start: 0; }
+
+.gallery-showcase-li {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0 5px 10px 0; }
+
+.gallery-photo {
+  width: 100%;
+  margin: 0; }
+
+.gallery-img {
+  opacity: 0.83;
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s, opacity 0.5s; }
+  .gallery-img:hover {
+    opacity: 1; }
+
+.showcase-mini-headline {
+  font-family: 'Poppins Italic';
+  font-size: 18px;
+  color: #040F16;
+  margin: 20px 0; }
+
+@media (max-width: 700.98px) {
+  .header-content {
+    display: none; }
+  .header-switch-btn {
+    display: none; }
+  .responsive-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .responsive-header-container .logo {
+      font-family: "Playfair Display Regular"; }
+    .responsive-header-container .switch-flags {
+      display: flex;
+      justify-content: flex-end;
+      position: absolute;
+      bottom: 20px;
+      right: 20px; }
+      .responsive-header-container .switch-flags .switch-btn {
+        margin-left: 15px;
+        cursor: pointer;
+        opacity: 30%; }
+      .responsive-header-container .switch-flags .btn--active {
+        opacity: 100%; }
+  .background-images-section {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0; }
+  .bg-images-left,
+  .bg-images-right {
+    margin: 0;
+    padding: 0;
+    height: 100%; }
+  .main-section-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 670px; }
+    .main-section-heading .main-heading-txt {
+      font-family: 'Playfair Display';
+      font-size: 30px; }
+    .main-section-heading .heading-txt-border {
+      display: none; }
+  .first-article-box-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .article-main-btn {
+    font-size: 16px; }
+  .article-main-para {
+    width: 100%;
+    height: 255px;
+    overflow: hidden; }
+    .article-main-para .article-main-para-row {
+      padding-right: 10px; }
+    .article-main-para .nonlist,
+    .article-main-para .our-mission-txt {
+      margin-right: 10px; }
+  .article-main-txt {
+    font-size: 12px;
+    word-spacing: 1px;
+    font-family: 'Poppins Regular'; }
+  .first-article-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .first-article-navbar-li {
+    margin-bottom: 27px; }
+  .first-article-navbar-txt {
+    font-family: 'Playfair Display Regular';
+    font-size: 30px; }
+  .personal-page-head-section {
+    display: block;
+    width: 100%;
+    position: relative; }
+  .personal-pg-head-txt {
+    font-family: 'Poppins Bold';
+    font-size: 25px;
+    text-align: center; }
+  .head-section-left {
+    width: 100%; }
+  .head-section-heading-box {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-30%, -30%);
+    border-bottom: none; }
+  .head-section-heading-txt {
+    font-family: 'Playfair Display Regular';
+    font-size: 30px;
+    color: #FBFBFF;
+    text-align: center; }
+  .personal-pg-txt-box {
+    height: 395px;
+    overflow: hidden; }
+  .personal-pages-row {
+    overflow: hidden; }
+  .manuscript-head-txt,
+  .manuscript-bot-txt {
+    display: none; }
+  .team-section-basic-content {
+    display: none; }
+  .foundation-section {
+    position: relative; }
+  .foundation-heading-box {
+    position: absolute;
+    top: 5%;
+    left: 7%;
+    border-bottom: none; }
+  .foundation-headline {
+    color: #FBFBFF; }
+  .team-section-responsive {
+    display: block; }
+  .projects-section-headline-box {
+    text-align: center; }
+  .projects-section-headline {
+    font-size: 30px; }
+  .mini-headline-description-box {
+    display: none; }
+  .projects-section-box {
+    position: relative;
+    padding-bottom: 50px;
+    margin-bottom: 50px; }
+    .projects-section-box .registration-button-box {
+      position: absolute;
+      bottom: -2%;
+      right: 25%; }
+  .contact-form-section {
+    width: 80%;
+    padding: 0 35px 0 35px; }
+  .contact-page-headline {
+    font-size: 30px;
+    padding-bottom: 25px; }
+  .additional-info-box {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px; }
+  .additional-info-section {
+    margin-bottom: 25px; }
+  .footer-main .footer-container {
+    display: none; }
+  .footer-main .footer-responsive-container {
+    display: block; } }
+
+@media (max-width: 991.98px) {
+  .header-content {
+    display: none; }
+  .header-switch-btn {
+    position: fixed;
+    top: 28px;
+    right: 80px; }
+  .header-content-left {
+    position: fixed;
+    left: 40px;
+    top: 16px; }
+  .contact-form-section {
+    width: 80%;
+    padding: 0 35px 0 35px; }
+  .responsive-header-container {
+    display: block; }
+  .background-images-section {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    padding: 0; }
+  .bg-images-left,
+  .bg-images-right {
+    margin: 0;
+    padding: 0;
+    height: 100%; }
+  .main-section-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 670px;
+    width: 100%; }
+  .main-heading-txt {
+    font-size: 30px; }
+  .heading-txt-border {
+    margin-top: 1.5rem; }
+  .first-article-box-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .article-main-para {
+    width: 100%;
+    height: 265px;
+    overflow: hidden; }
+  .article-main-txt {
+    font-size: 12px;
+    word-spacing: 1px;
+    font-family: 'Poppins Regular'; }
+  .first-article-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .first-article-navbar-li {
+    margin-bottom: 10px; }
+  .manuscripts-page-headline,
+  .projects-section-headline {
+    text-align: center; }
+  .presse-wrapper,
+  .manuscripts-main,
+  .personal-page-photos-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .photos-headline {
+    text-align: center; }
+  .footer-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 0;
+    margin: 0 auto;
+    max-width: 1010px;
+    width: 100%; }
+  .item--4 {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    width: 100%; }
+  .switch-flags {
+    display: none; } }
+
+@media (max-width: 575.98px) {
+  .main-heading-txt {
+    font-size: 24px; } }
+
+@media (max-width: 1199.98px) {
+  .header-mn {
+    padding: 0 10px 0 10px; } }

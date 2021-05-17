@@ -1,0 +1,421 @@
+// // Small devices (landscape phones, less than 768px)
+@media (max-width: 700.98px) { 
+    //Homepage
+        .header-content {
+            display: none;
+        }
+    
+        .header-switch-btn {
+            display: none;
+        }
+        
+        
+        .responsive-header-container {
+            @include spacedcenter;
+            .logo {
+                font-family: "Playfair Display Regular";
+            }
+            //flags
+
+            // clickze mxolod GEO-ze gadadis, ar mushaobs classList.add da remove
+            .switch-flags {
+                display: flex;
+                justify-content: flex-end;
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+                .switch-btn {
+                    margin-left: 15px;
+                    cursor: pointer;
+                    opacity: 30%;
+                }
+                .btn--active {
+                    opacity: 100%;
+                }
+                
+            }
+
+
+        }
+    
+    
+        .background-images-section {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+    
+        .bg-images-left,
+        .bg-images-right {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        
+        .main-section-heading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 670px;
+            .main-heading-txt {
+                font-family: 'Playfair Display';
+                font-size: $fontsize30;
+            }
+            .heading-txt-border {
+                display: none;
+            }
+        }
+       
+    
+    
+    //     // Articles section
+    .first-article-box-content {
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+    }
+    
+    .article-main-btn {
+        font-size: $fontsize16;
+    }
+    
+    
+    .article-main-para {
+        width: 100%;
+        height: 255px;
+        overflow: hidden;
+        .article-main-para-row {
+            padding-right: 10px;
+           
+        }
+        .nonlist,
+        .our-mission-txt {
+            margin-right: 10px;
+        }
+        
+    }
+    
+    .article-main-txt {
+        font-size: $fontsize12;
+        word-spacing: 1px;
+        font-family:'Poppins Regular';
+    }
+    
+    .first-article-navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .first-article-navbar-li {
+        margin-bottom: 27px;
+    }
+    
+    .first-article-navbar-txt {
+        font-family: 'Playfair Display Regular';
+        font-size: $fontsize30; 
+    }
+    
+    
+    // Vakhtang Page
+    
+    .personal-page-head-section {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+    
+    .personal-pg-head-txt {
+        font-family: 'Poppins Bold';
+        font-size: $fontsize25;
+        text-align: center;
+    }
+        .head-section-left {
+            
+            width: 100%;
+        }
+        .head-section-heading-box {
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            transform: translate(-30%, -30%);
+            border-bottom: none;
+        }
+        .head-section-heading-txt {
+            font-family: 'Playfair Display Regular';
+            font-size: $fontsize30;
+            color: $color02-wht;
+            text-align: center;
+        }
+        .personal-pg-txt-box {
+            height: 395px;
+            overflow: hidden;
+        }
+        .personal-pages-row {
+            overflow: hidden;
+        }
+        .manuscript-head-txt,
+        .manuscript-bot-txt {
+            display: none;
+        }
+    
+    
+        //team section
+
+        .team-section-basic-content {
+            display: none;
+        }
+    
+        .foundation-section {
+            position: relative;
+        }
+        .foundation-heading-box {
+            position: absolute;
+            top:5%;
+            left:7%;
+            border-bottom: none;
+        }
+        .foundation-headline {
+            color: $color02-wht;
+        }
+    
+    
+    
+        .team-section-responsive {
+            display: block;
+        }
+    
+        // projects page
+    
+        .projects-section-headline-box {
+            text-align: center;
+        }
+        .projects-section-headline {
+            font-size: $fontsize30;
+        }
+        .mini-headline-description-box {
+            display: none;
+        }
+    
+        .projects-section-box {
+            position: relative;
+            padding-bottom: 50px;
+            margin-bottom: 50px;
+            .registration-button-box {
+                position: absolute;
+                bottom: -2%;
+                right: 25%;
+            }
+        }
+    
+    
+        //contact form
+    
+        .contact-form-section  {
+            width: 80%;
+            padding:0 35px 0 35px;
+        }
+       
+        .contact-page-headline {
+            font-size: $fontsize30;
+            padding-bottom: 25px;
+        }
+    
+        .additional-info-box {
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            margin-left: 30px;
+        }
+    
+        .additional-info-section {
+            margin-bottom: 25px;
+        }
+        
+
+
+     
+    
+        //footer
+        .footer-main {
+            .footer-container {
+                display: none;
+            }
+            .footer-responsive-container {
+                display: block;
+            }
+           
+        }
+    
+       
+
+    
+        
+    
+    
+        
+        
+    
+    }
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    // // Medium devices (tablets, less than 992px)
+    @media (max-width: 991.98px) { 
+        .header-content {
+            display: none;
+        }
+    
+        .header-switch-btn {
+            position: fixed;
+            top: 28px;
+            right: 80px;
+        }
+    
+        .header-content-left {
+            position: fixed;
+            left: 40px;
+            top: 16px;
+        }
+    
+        .contact-form-section  {
+            width: 80%;
+            padding:0 35px 0 35px;
+        }
+        
+    
+        .responsive-header-container {
+            display: block;
+        }
+    
+        .background-images-section {
+            display: inline-flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+    
+        .bg-images-left,
+        .bg-images-right {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        
+        .main-section-heading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 670px;
+            width: 100%;
+        }
+    
+        .main-heading-txt {
+            font-size: $fontsize30;
+        }
+    
+        
+        .heading-txt-border{
+            margin-top: 1.5rem;
+        }
+    
+        //     // Articles section
+    .first-article-box-content {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        
+        
+    }
+    
+    .article-main-para {
+    width: 100%;
+    height: 265px;
+    overflow: hidden;
+    }
+    
+    .article-main-txt {
+    font-size: $fontsize12;
+    word-spacing: 1px;
+    font-family:'Poppins Regular';
+    }
+    
+    .first-article-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+    .first-article-navbar-li {
+    margin-bottom: 10px;
+    }
+    
+    .manuscripts-page-headline,
+    .projects-section-headline {
+        text-align: center;
+    }
+    
+    // .personal-page-photos {
+    //     @include responsivecenter;
+    // }
+    .presse-wrapper,
+    .manuscripts-main,
+    .personal-page-photos-box {
+        @include responsivecenter; 
+    }
+     
+
+    .photos-headline {
+        text-align: center;
+    }
+    // footer
+    .footer-container {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr 1fr 0;
+        margin: 0 auto;
+        max-width: 1010px;
+        width: 100%;
+    }
+    
+    .item--4 {
+        grid-row: 2 / 3;
+        grid-column: 1 / -1;
+        width: 100%;
+    }
+
+    .switch-flags {
+        display: none;
+    }
+    
+    }
+    
+    //  Extra small devices (portrait phones, less than 576px)
+    @media (max-width: 575.98px) { 
+        
+        .main-heading-txt {
+            font-size: $fontsize24;
+        }
+        // .footer-main {
+        //     .footer-top-wrapper {
+        //         align-items: center;
+        //     }
+        // }
+
+    }
+    
+    // // Large devices (desktops, less than 1200px)
+    @media (max-width: 1199.98px) { 
+        .header-mn {
+            padding:0 10px 0 10px;
+        }
+    
+     }

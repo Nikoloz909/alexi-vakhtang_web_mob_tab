@@ -1,0 +1,28 @@
+@import './basic/reset.scss';
+@import './basic/fonts.scss';
+
+
+@import './components/box-properties.scss';
+@import './components/buttons.scss';
+@import './layout/header.scss';
+@import './layout/navigation.scss';
+@import './layout/footer.scss';
+
+@import './modules/classes.scss';
+@import './modules/mixins.scss';
+@import './modules/variables.scss';
+
+@import './basic/basic-styles.scss';
+
+
+@import './main/homepage.scss';
+@import './main/personal-pages.scss';
+@import './main/foundationpage.scss';
+@import './main/projectspage.scss';
+@import './main/contactpage.scss';
+@import './main/gallery-styles.scss';
+
+@import './main/keyframes.scss';
+@import './main/media.scss';
+
+

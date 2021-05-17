@@ -1,0 +1,181 @@
+
+// foundation
+
+.foundation-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.foundation-heading-box {
+    border-bottom: 2px solid $color01-blck;
+    padding:0 30px 20px 60px;
+}
+.foundation-headline {
+    @extend %personal-pg-headline;
+}
+
+.foundation-section-img {
+    width: 100%;
+}
+    
+   
+
+ 
+
+.about-us-txt {
+    font-size: $fontsize16;
+    font-family: 'Poppins Light', 'FiraGO Light';
+    color: $color01-blck;
+    line-height: initial;
+}
+
+.about-us-ul {
+    margin-top: 40px;
+}
+
+//team 
+
+.team-section {
+    margin-top: 40px;
+    @include flex;
+}
+    .team-section-img {
+        margin-right: 20px;
+    }
+    .team-section-txt {
+        @include verticalflex;
+    }
+    .team-section-headline {
+        font-size: $fontsize25;
+        font-family: 'Poppins BoldItalic', 'FiraGO BoldItalic';
+        color: $color01-blck;
+    }
+    .team-section-text-area {
+        margin-top: 20px;
+        font-family: 'Poppins Italic', 'FiraGO Book';
+        font-size: $fontsize18;
+        color: $color01-blck;
+    }
+
+
+// responsive team section
+.team-section-responsive {
+    display: none;
+}
+
+
+// carousel
+.carousel {
+    align-items: center;
+    display: flex;
+    margin: 2rem auto;
+    overflow: hidden;
+    position: relative;
+    width: 248px;
+    
+    &__images {
+        display: flex;
+        transition: 0.25s;
+
+
+        img {
+            border-radius: 5px;
+            width: 248px;
+            
+        }
+    }
+
+    .team-member-name {
+        font-size: $fontsize25;
+        font-family: 'Poppins BoldItalic', 'FiraGO BoldItalic';
+        color: $color01-blck;
+        margin-bottom: 10px;
+        width: 248px;
+        padding: 0 5px;
+    }
+
+    .team-member-bio-para {
+        font-family: 'Poppins Italic', 'FiraGO BoldItalic';
+        font-size: $fontsize12;
+        color: $color01-blck;
+        width: 248px;
+        padding: 0 5px;
+    }
+
+
+
+    &__button {
+        background: $color01-blck;
+        border: 0;
+        border-radius: 50%;
+        color: $color02-wht;
+        cursor: pointer;
+        font-size: 1.5rem;
+        font-weight: bold;
+        height: 3rem;
+        opacity: 0.25;
+        position: absolute;
+        transition: opacity 0.25s;
+        width: 3rem;
+        z-index: 1;
+        
+
+        &.previous {
+            left: 5px;
+            top: 100px;
+        }
+
+        &.next {
+            right: 5px;
+            top: 100px;
+        }
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+}
+
+
+
+// .team-section-headline {
+//     margin-bottom: 30px;
+// }
+// .team-section-headline-txt {
+//     font-family: 'Poppins Bold', 'FiraGO Bold';
+//     font-size: $fontsize26;
+//     color: $color01-blck;
+//     text-align: center;
+// }
+
+// .team-photos-section {
+//     display: flex;
+//     justify-content: center;
+//     overflow: hidden;
+// }
+
+// .responsive-team-img {
+//     width: 248px;
+//     object-fit: cover;
+//     padding: 5px;
+// }
+
+// .team-member-info {
+//     text-align: center;
+//     padding: 10px;
+// }
+
+// .team-member-name {
+//     font-size: $fontsize25;
+//     font-family: 'Poppins BoldItalic', 'FiraGO BoldItalic';
+//     color: $color01-blck;
+//     margin-bottom: 10px;
+// }
+
+// .team-member-bio-para {
+//     font-family: 'Poppins Italic', 'FiraGO BoldItalic';
+//     font-size: $fontsize12;
+//     color: $color01-blck;
+// }
+

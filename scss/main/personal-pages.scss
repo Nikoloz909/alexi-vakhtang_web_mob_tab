@@ -1,0 +1,178 @@
+// Vakhtang Matchavariani Page Styles
+
+.personal-page-head-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-section-left {
+    max-width: 683px;
+    
+}
+
+.head-section-img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.head-section-heading-box {
+    border-bottom: 2px solid $color01-blck;
+    padding:0 30px 20px 60px;
+}
+
+.head-section-heading-txt {
+    @extend %personal-pg-headline;
+}
+
+.personal-page-box {
+    margin-top: 60px;
+}
+
+.personal-pg-txt-box {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.personal-pg-txt {
+    font-size: $fontsize16;
+    font-family: 'Poppins Light', 'BPG Nino Mtavruli Bold';
+    color: $color01-blck;
+    margin-bottom: 30px;
+}
+
+// photos section
+
+.personal-page-photos {
+    margin-top: 44px;
+}
+
+
+
+.photos-headline {
+    padding: 30px 0 20px 0;
+}
+
+.personal-pg-head-txt {
+    @extend %personal-pg-headline;
+    text-transform: uppercase;
+    
+}
+
+// .personal-page-photos-box {
+//     display:flex;
+//     flex-direction: column;
+//     align-items: center;
+// }
+
+
+// presse
+
+.presse-section {
+    margin-top: 45px;
+
+}
+
+.presse-list-txt {
+    width: 100%;
+    .presse-list-li {
+        font-size: $fontsize16;
+        font-family: 'Poppins Light';
+        color: $color01-blck;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+}
+
+
+.presse-list-li-after {
+    font-family: 'Poppins Medium';
+    font-size: $fontsize16;
+    color: $color01-blck;
+    margin:10px 0 0 20px;
+}
+// manuscripts
+
+.manuscripts-wrapper {
+    margin-top: 44px;
+}
+
+.manuscripts-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.manuscript-head-txt {
+    font-family: 'Poppins BoldItalic', 'FiraGO BoldItalic';
+    font-size: $fontsize25;
+    color: $color01-blck;
+    margin: 10px 0;
+}
+
+.manuscript-bot-txt {
+    font-size: $fontsize18;
+    color: $color01-blck;
+    font-family: 'Poppins Italic', 'FiraGO LightItalic';
+}
+    
+
+
+
+.audio-samples-section {
+    margin-top: 44px;
+    .audio-samples-content {
+        width: 100%;
+    }
+
+    .audio-samples-row {
+       @include verticalflex;
+       margin-bottom: 30px; 
+    }
+    .audio-samples-heading {
+        font-family: 'Poppins Medium';
+        font-size: $fontsize16;
+        color: $color01-blck;
+        text-transform: uppercase;
+    }
+
+    .audio-samples-ul {
+        margin-top: 7px;
+    }
+
+    .audio-samples-li {
+        font-family: 'Poppins Light';
+        font-size: $fontsize16;
+        color: $color01-blck;
+        line-height: initial;
+        text-transform: none;
+    }
+
+}
+
+
+
+
+// Manuscripts pg
+
+.manuscripts-page-headline {
+    max-width: 1010px;
+    width: 100%;
+    margin:15px auto 15px auto;
+}
+
+.manuscripts-pg-txt {
+    font-family: 'Poppins Regular';
+    font-size: $fontsize30;
+    color: $color01-blck;
+    text-decoration: underline;
+}
+
+
+

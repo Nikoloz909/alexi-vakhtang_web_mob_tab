@@ -1,0 +1,133 @@
+
+.footer-main {
+    background-color: $color05;
+}
+
+.footer-respo {
+    background-color: $color05;
+}
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 0 auto;
+        max-width: 1010px;
+        width: 100%;
+    }
+    
+
+    .footer-txt {
+            font-size: $fontsize14;
+            font-family: 'Poppins Medium', 'FiraGO Medium';
+            color: $color02-wht;
+    }
+
+    .footer-img {
+        width: 45px;
+        margin-bottom: 30px;
+    }
+    
+
+    .item {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+        .item--1 {
+            @include footerborder;
+            transition: all .2s;
+            padding: 15px 35px 75px 10px;
+            text-align: center;
+            &:hover {
+                background-color: $color06;
+                transition: all .2s;
+            }
+        }
+
+
+
+        .item--2 {
+            @include footerborder;
+            transition: all .2s;
+            padding: 15px 75px 75px 75px;
+            text-align: center;
+            &:hover {
+                background-color: $color06;
+                transition: all .2s;
+            }
+
+
+            
+        }
+
+
+
+        .item--3 {
+            @include footerborder;
+            transition: all .2s;
+            padding: 15px 75px 75px 75px;
+            text-align: center;
+            &:hover {
+                background-color: $color06;
+                transition: all .2s;
+            }
+        }
+
+
+
+        .item--4 {
+            background-color: $color06;
+            padding: 15px 30px 75px 30px;
+            text-align: center;
+
+
+            
+        }
+    
+
+
+
+// responsive footer
+
+
+.footer-responsive-container {
+    display: none;
+}
+
+.footer-top-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all .1s;
+    &:hover {
+        background-color: $color06;
+        transition: all .1s;
+    }
+}
+    .top-main-content {
+        display: flex;
+        justify-content: flex-start;
+        margin: 20px 0 20px 25px;
+        align-items: center;
+        
+    }
+    .respo-footer-img {
+        width: 45px;
+        margin-right: 25px;
+    }
+    .footer-bottom-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $color06;
+        padding: 20px 0;
+    }
+
+    .respo-footer-txt {
+        font-size: $fontsize12;
+        font-family: 'Poppins Medium', 'FiraGO Medium';
+        color: $color02-wht;   
+    }

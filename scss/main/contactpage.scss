@@ -1,0 +1,99 @@
+.contact-page-head {
+    text-align: center;
+    padding: 25px 0 0;
+}
+
+.contact-form-section {
+    padding: 0 0 25px;
+}
+
+.contact-page-headline {
+    @extend %personal-pg-headline;
+}
+
+.contact-form-section  {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #FFF;
+    max-width: 850px;
+    width: 100%;
+}
+
+.form-name {
+    width: 420px;
+    height: 36px;
+    margin: 16px auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.form-email {
+    width: 768px;
+    height: 36px;
+    margin: 16px auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.form-message {
+    width: 768px;
+    height:191px;
+    margin: 16px auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+        border-radius: 3px;
+        border: 2px solid rgba(151, 146, 146, 0.651);
+        resize: none;
+}
+
+.email-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0px 25px 0px;
+}
+
+.email-txt {
+    font-size: $fontsize14;
+    font-family: 'Poppins Medium';
+    color: $color04;
+    margin: 30px 0 0;
+}
+
+
+.additional-info-box {
+    justify-content: center;
+    display: flex;
+    margin:45px 0 37px 0;
+}
+
+.additional-info-section {
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+}
+
+.add-info-img {
+    max-width: 45px;
+    width: 100%;
+    margin-right: 15px;
+}
+
+.phone-number {
+    color: $color01-blck;
+    font-size: $fontsize18;
+    font-family: 'Poppins Medium';
+    cursor: pointer;
+}
+
+.location-txt {
+    color: $color01-blck;
+    font-size: $fontsize18;
+    font-family: 'Poppins Medium';
+}

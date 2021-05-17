@@ -1,0 +1,130 @@
+// @import './../components/box-properties.scss';
+// @import './../modules/mixins.scss';
+// @import './../modules/variables.scss';
+// @import './../modules/classes.scss';
+
+// Two side-to-side images section
+
+.background-images-section {
+    display: flex;
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+}
+
+    .bg-images-left,
+    .bg-images-right {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .vakhtang-img,
+    .alex-img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        filter: brightness(50%);
+    }
+
+
+    .main-section-heading {
+        position: absolute;
+        top: 5%;
+        left: 25%;
+        max-width: 670px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-heading-txt {
+        font-size: $fontsize40;
+        color: $color02-wht;
+        line-height: initial;
+        padding: 5px;
+        font-family: 'Playfair Display', 'BPG Nino Mtavruli Bold';
+
+    }
+
+    .heading-txt-border {
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: -100%;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 1px;
+        border-top: 1px solid $color02-wht;
+    }
+
+
+
+
+
+
+.firt-article-box-content {
+    @include verticalflex;
+}
+    
+.article-headline {
+    margin: 33px 0 0;
+}
+
+.article-headline-txt {
+    @extend %greyboxheadline;
+        
+}
+
+.article-main-para {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.main-para-row {
+    max-width: 450px;
+    width: 100%;
+    .nonlist {
+        margin-bottom: 20px;
+        font-family: 'Poppins Medium';
+    }
+}
+
+.article-main-txt {
+    font-size: $fontsize14;
+    font-family: 'Poppins Regular';
+    line-height: initial;
+}
+
+.first-article-nav {
+    margin: 20px auto 23px auto;
+    max-width: 1010px;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    background-color: transparent;
+}
+
+.first-article-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.first-article-navbar-txt {
+    font-family: 'Playfair Display', 'FiraGO Regular';
+    font-size: $fontsize40;
+    color: $color01-blck;
+    border-bottom: 1px solid transparent;
+    transition: all .2s;
+    &:hover,
+    &:active {
+        border-bottom: 1px solid $color01-blck;
+        transition: all .2s;
+        color: $color01-blck;
+    }
+}
+    

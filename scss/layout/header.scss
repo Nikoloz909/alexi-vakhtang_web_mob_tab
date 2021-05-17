@@ -1,0 +1,129 @@
+@import '../modules/classes.scss';
+@import '../modules/variables.scss';
+@import '../modules/mixins.scss';
+
+
+
+
+
+.header-mn {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.815);
+    backdrop-filter: blur(5px);
+}
+    
+    .header-content {
+        @include spacedcenter;
+    }
+
+    .header-content-left {
+        
+        .header-main-logo {
+            cursor:pointer;
+        }
+
+        .logo {
+            font-size: $fontsize34;
+            font-family: 'Playfair Display Bold';
+            color: $color01-blck;
+        }
+    }
+
+    .header-menu {
+        padding: 10px 5px 0 5px;
+    }
+
+    .header-navbar {
+        margin-top: 15px;
+    }
+
+    .navbar-menu {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .navbar-li {
+        padding-bottom: 37px;
+        position: relative;
+        &:hover,
+        &:active {
+            .navbar-menu-dropdown {
+                display: block;
+            }
+        }
+    }
+
+    .navbar-txt {
+        &:link,
+        &:visited {
+            font-size: $fontsize14;
+            color: $color01-blck;
+            padding: 8px 15px 0 15px;
+            text-transform: uppercase;
+            border-top: 3px solid transparent;
+            letter-spacing: 1px;
+            font-family: 'Poppins Bold', 'FiraGO Bold';
+            transition: all .2s;
+        }
+    }
+
+    .navbar-txt {
+        &:hover,
+        &:active {
+            border-top: 3px solid $color01-blck;
+            color: $color01-blck;
+            transition: all .2s;
+        }
+    }
+    .responsive-header-container {
+        display: none;
+    }
+
+    //Dropdown menu
+// First Dropdown 
+
+.navbar-menu-dropdown {
+    background-color: $color02-wht;
+    width: 248px;
+    display: none;
+    position: absolute;
+    top: 53px;
+    left: -40%;
+    list-style: inside;
+}
+
+
+
+
+.navbar-li-dropdown {
+    margin:15px 0 15px 20px;
+    
+}
+
+
+.navbar-txt-dropdown {
+    &:link,
+    &:visited {
+    font-size: $fontsize16;
+    color: $color04;
+    padding: 8px 0;
+    text-transform: uppercase;
+    border-top: 3px solid transparent;
+    letter-spacing: 1px;
+    font-family: 'Poppins Medium', 'FiraGO Medium';
+    
+    }
+}
+
+.navbar-txt-dropdown {
+    &:hover,
+    &:active {
+        color: $color01-blck;
+    }
+}
+
