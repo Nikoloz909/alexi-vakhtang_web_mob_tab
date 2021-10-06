@@ -266,6 +266,42 @@ button, textarea, input:focus {
   font-style: italic;
   font-display: swap; }
 
+.presse-section {
+  width: 100%;
+  padding-top: 50px; }
+  .presse-section .wrapper {
+    max-width: 1270px;
+    width: 100%;
+    margin: 0 auto;
+    background: #efefef;
+    padding: 25px; }
+    .presse-section .wrapper .wrapper-ul {
+      font-size: 17px;
+      font-family: sans-serif;
+      text-align: center; }
+      .presse-section .wrapper .wrapper-ul .wrappe-li {
+        margin: 25px 0;
+        line-height: 25px; }
+
+.section-biorgraphy {
+  width: 100%;
+  padding-top: 50px; }
+  .section-biorgraphy .bio-div {
+    max-width: 1270px;
+    width: 100%;
+    margin: 0 auto;
+    background: #efefef;
+    padding: 25px; }
+    .section-biorgraphy .bio-div .par {
+      font: 1em sans-serif;
+      text-transform: uppercase;
+      margin: 20px 0; }
+    .section-biorgraphy .bio-div .par-01, .section-biorgraphy .bio-div .par-02 {
+      font: 1em sans-serif;
+      line-height: 25px;
+      text-align: center;
+      margin: 15px 0; }
+
 .article-headline-txt {
   font-size: 34px;
   font-family: 'Poppins Bold', 'BPG Nino Mtavruli Bold';
@@ -403,10 +439,9 @@ button, textarea, input:focus {
 .header-content-left .header-main-logo {
   cursor: pointer; }
 
-.header-content-left .logo {
-  font-size: 34px;
-  font-family: 'Playfair Display Bold';
-  color: #040F16; }
+.header-content-left .logo img {
+  max-width: 120px;
+  width: 100%; }
 
 .header-menu {
   padding: 10px 5px 0 5px; }
@@ -749,6 +784,9 @@ section {
 .article-headline {
   margin: 33px 0 0; }
 
+.article-headline-txt {
+  font-size: 22px; }
+
 .article-main-para {
   margin-top: 35px;
   display: flex;
@@ -764,7 +802,8 @@ section {
 .article-main-txt {
   font-size: 14px;
   font-family: 'Poppins Regular';
-  line-height: initial; }
+  line-height: initial;
+  line-height: 30px; }
 
 .first-article-nav {
   margin: 20px auto 23px auto;
@@ -920,7 +959,7 @@ section {
   font-size: 16px;
   font-family: 'Poppins Light', 'FiraGO Light';
   color: #040F16;
-  line-height: initial; }
+  line-height: 2; }
 
 .about-us-ul {
   margin-top: 40px; }
@@ -1007,8 +1046,9 @@ section {
 
 .projects-section-headline {
   font-family: 'Playfair Display';
-  font-size: 40px;
-  color: #040F16; }
+  font-size: 30px;
+  color: #040F16;
+  margin-bottom: 30px; }
 
 .projects-section-box {
   position: relative;
@@ -1040,11 +1080,14 @@ section {
 
 .competition-description-area {
   width: 100%; }
-  .competition-description-area .competition-description-txt {
+  .competition-description-area .competition-description-txt li {
     font-family: 'Poppins Thin', 'FiraGO Light';
     font-size: 16px;
     color: #040F16;
-    line-height: initial; }
+    line-height: initial;
+    margin: 15px 0;
+    text-align: center;
+    font-size: 20px; }
 
 .contact-page-head {
   text-align: center;

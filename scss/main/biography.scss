@@ -1,0 +1,23 @@
+.section-biorgraphy{
+    width: 100%;
+    padding-top: 50px;
+    .bio-div{
+        max-width: 1270px;
+        width: 100%;
+        margin: 0 auto  ;
+        background: #efefef;
+        padding: 25px;
+        .par{
+            font: 1em sans-serif;
+            text-transform: uppercase;
+            margin: 20px 0;
+
+        }
+        .par-01,.par-02{
+            font: 1em sans-serif;
+            line-height: 25px;
+            text-align: center;
+            margin: 15px 0;
+        }
+    }
+}

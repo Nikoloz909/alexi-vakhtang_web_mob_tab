@@ -18,8 +18,9 @@
   "homepage": "https://github.com/Metrevelii/CharityFondation#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.1.0",
-    "node-sass": "^5.0.0"
+    "gulp-sass": "^4.1.1",
+    "node-sass": "^5.0.0",
+    "sass": "^1.41.0"
   },
   "dependencies": {}
 }

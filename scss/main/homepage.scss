@@ -75,6 +75,7 @@
 
 .article-headline-txt {
     @extend %greyboxheadline;
+    font-size: 22px;
         
 }
 
@@ -98,6 +99,7 @@
     font-size: $fontsize14;
     font-family: 'Poppins Regular';
     line-height: initial;
+    line-height: 30px;
 }
 
 .first-article-nav {

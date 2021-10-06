@@ -1,0 +1,23 @@
+.presse-section{
+    width: 100%;
+    padding-top: 50px;
+    // background: #efefef;
+    .wrapper{
+        max-width: 1270px;
+        width: 100%;
+        margin: 0 auto  ;
+        background: #efefef;
+        padding: 25px;
+        .wrapper-ul{
+            font-size: 17px;
+            font-family: sans-serif;
+            text-align: center;
+            .wrappe-li{
+                margin: 25px 0;
+                line-height: 25px;
+            }
+            
+        }
+    }
+
+}

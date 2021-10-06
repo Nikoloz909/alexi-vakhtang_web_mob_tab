@@ -26,10 +26,12 @@
             cursor:pointer;
         }
 
-        .logo {
-            font-size: $fontsize34;
-            font-family: 'Playfair Display Bold';
-            color: $color01-blck;
+        .logo img{
+            max-width: 120px;
+            width: 100%;
+            // font-size: $fontsize34;
+            // font-family: 'Playfair Display Bold';
+            // color: $color01-blck;
         }
     }
 

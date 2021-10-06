@@ -1,274 +1,558 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Fontawesome cdn link for burger icon -->
-    <script src="https://kit.fontawesome.com/6de6aa5275.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style/main.css">
-    <title>Foundation</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fontawesome cdn link for burger icon -->
+  <script src="https://kit.fontawesome.com/6de6aa5275.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style/main.css">
+  <title>Foundation</title>
 </head>
+
 <body>
-    <header>
-      <div class="header-mn">
-        <div class="box-container header-content">
-          <div class="header-content-left">
-            <a href="index.html" class="header-main-logo">
-              <h3 class="logo">M. fund</h3>
-            </a>
-          </div>
-          <div class="header-menu">
-            <nav class="header-navbar">
-              <ul class="navbar-menu">
-                <li class="navbar-li"><a href="alex.html" class="navbar-txt" id="alexi" data-reload>Alexi</a>
-                 <ul class="navbar-menu-dropdown">
-                   <li class="navbar-li-dropdown"><a class="navbar-txt-dropdown" href="#" id="biography" data-reload>Biography</a></li>
-                   <li class="navbar-li-dropdown"><a class="navbar-txt-dropdown" href="#" id="photos" data-reload>Photos</a></li>
-                   <li class="navbar-li-dropdown"><a class="navbar-txt-dropdown" href="#" id="manuscripts" data-reload>Manuscripts</a></li>
-                   <li class="navbar-li-dropdown"><a class="navbar-txt-dropdown" href="#" id="presse" data-reload>Presse</a></li>
-                   <li class="navbar-li-dropdown"><a class="navbar-txt-dropdown" href="#" id="audiosamples" data-reload>Video & Audio Samples</a></li>
-                 </ul>
-               </li>
-                <li class="navbar-li"><a href="vakhtang.html" id="vakhtang" class="navbar-txt" data-reload>Vakhtang</a>
-                   <ul class="navbar-menu-dropdown">
-                     <li class="navbar-li-dropdown"><a class="navbar-txt-dropdown" href="#" id="biography" data-reload>Biography</a></li>
-                     <li class="navbar-li-dropdown"><a class="navbar-txt-dropdown" href="#" id="photos" data-reload>Photos</a></li>
-                     <li class="navbar-li-dropdown"><a class="navbar-txt-dropdown" href="#" id="manuscripts" data-reload>Manuscripts</a></li>
-                     <li class="navbar-li-dropdown"><a class="navbar-txt-dropdown" href="#" id="presse" data-reload>Presse</a></li>
-                     <li class="navbar-li-dropdown"><a class="navbar-txt-dropdown" href="#" id="audiosamples" data-reload>Video & Audio Samples</a></li>
-                   </ul>
-               </li>
-               <li class="navbar-li"><a href="foundation.html" class="selected-nav-li" id="foundation" data-reload>Foundation</a>
-                 <ul class="navbar-menu-dropdown">
-                   <li class="navbar-li-dropdown"><a class="navbar-txt-dropdown js--scroll-to-information" href="#" id="information" data-reload>Information</a></li>
-                   <li class="navbar-li-dropdown"><a class="navbar-txt-dropdown js--scroll-to-photos" href="#" id="photos" data-reload>Photos</a></li>
-                   <li class="navbar-li-dropdown"><a class="navbar-txt-dropdown js--scroll-to-team" href="#" id="team" data-reload>Team</a></li>
-                 </ul>
-               </li>
-               <li class="navbar-li"><a href="projects.html" class="navbar-txt" id="projects" data-reload>Projects</a></li>
-               <li class="navbar-li"><a href="contact.html" class="navbar-txt" id="contact" data-reload>Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="header-switch-btn">
-            <a data-lang class="switch-btn btn--eng">ENG</a>
-            <span class="switch-btn-line">/</span>
-            <a data-lang class="switch-btn btn--geo">GEO</a>
-           </div>
+  <header>
+    <div class="header-mn">
+      <div class="box-container header-content">
+        <div class="header-content-left">
+          <a href="index.html" class="header-main-logo">
+            <h3 class="logo"><img  src="images/AVM_LOGO_01.png" alt="logo"></h3>
+          </a>
         </div>
-       
-       </div>
-       <!-- Responsive Navbar -->
-   <div class="responsive-header-container">
-       <div class="header-content-left">
-           <a href="index.html" class="header-main-logo">
-               <h3 class="logo">M. fund</h3>
-           </a>
-           </div>
-           <div class="header-switch-btn">
-            <a data-lang class="switch-btn btn--eng">ENG</a>
-            <span class="switch-btn-line">/</span>
-            <a data-lang class="switch-btn btn--geo">GEO</a>
-           </div>
-       <nav class="header__nav nav-bar">
-           <div class="toggle-menu">
-               <div class="line line1"></div>
-               <div class="line line2"></div>
-               <div class="line line3"></div>
-           </div>
-           <ul class="responsive-navbar-menu">
-               <li class="responsive-navbar-li"><a href="alex.html" class="responsive-navbar-li-txt" id="alexi" data-reload>Alexi</a>
-               <ul class="responsive-nav-dropdown">
-               <li class="responsive-dropdown-li"><a class="responsive-li-txt" href="#" id="biography" data-reload>Biography</a></li>
-               <li class="responsive-dropdown-li"><a class="responsive-li-txt" href="#" id="photos" data-reload>Photos</a></li>
-               <li class="responsive-dropdown-li"><a class="responsive-li-txt" href="#" id="manuscripts" data-reload>Manuscripts</a></li>
-               <li class="responsive-dropdown-li"><a class="responsive-li-txt" href="#" id="presse" data-reload>Presse</a></li>
-               <li class="responsive-dropdown-li"><a class="responsive-li-txt" href="#" id="audiosamples" data-reload>Video & Audio Samples</a></li>
-               </ul>
-               </li>
-               <li class="responsive-navbar-li"><a href="vakhtang.html" class="responsive-navbar-li-txt" id="vakhtang" data-reload>Vakhtang</a>
-               <ul class="responsive-nav-dropdown">
-                   <li class="responsive-dropdown-li"><a class="responsive-li-txt" href="#" id="biography" data-reload>Biography</a></li>
-                   <li class="responsive-dropdown-li"><a class="responsive-li-txt" href="#" id="photos" data-reload>Photos</a></li>
-                   <li class="responsive-dropdown-li"><a class="responsive-li-txt" href="#" id="manuscripts" data-reload>Manuscripts</a></li>
-                   <li class="responsive-dropdown-li"><a class="responsive-li-txt" href="#" id="presse" data-reload>Presse</a></li>
-                   <li class="responsive-dropdown-li"><a class="responsive-li-txt" href="#" id="audiosamples" data-reload>Video & Audio</a></li>
-               </ul>
-               </li>
-               <li class="responsive-navbar-li"><a href="foundation.html" class="responsive-navbar-li-txt" id="foundation" data-reload>Foundation</a>
-               <ul class="responsive-nav-dropdown">
-                   <li class="responsive-dropdown-li"><a class="responsive-li-txt js--scroll-to-information" href="#" id="information" data-reload>Information</a></li>
-                   <li class="responsive-dropdown-li"><a class="responsive-li-txt js--scroll-to-photos" href="#" id="photos" data-reload>Photos</a></li>
-                   <li class="responsive-dropdown-li"><a class="responsive-li-txt js--scroll-to-team" href="#" id="team" data-reload>Team</a></li>
-               </ul>
-               </li>
-               <li class="responsive-navbar-li"><a href="projects.html" class="responsive-navbar-li-txt" id="projects" data-reload>Projects</a></li>
-               <li class="responsive-navbar-li"><a href="contact.html" class="responsive-navbar-li-txt" id="contact" data-reload>Contact</a></li>
-           </ul>
-       </nav>
-    </div>   
+        <div class="header-menu">
+          <nav class="header-navbar">
+            <ul class="navbar-menu">
+              <li class="navbar-li"><a href="alex.html" class="navbar-txt" id="alexi" data-reload>Alexi</a>
+                <ul class="navbar-menu-dropdown">
+                  <li class="navbar-li-dropdown"><a class="navbar-txt-dropdown" href="#" id="biography"
+                      data-reload>Biography</a></li>
+                  <li class="navbar-li-dropdown"><a class="navbar-txt-dropdown" href="#" id="photos"
+                      data-reload>Photos</a></li>
+                  <li class="navbar-li-dropdown"><a class="navbar-txt-dropdown" href="#" id="manuscripts"
+                      data-reload>Manuscripts</a></li>
+                  <li class="navbar-li-dropdown"><a class="navbar-txt-dropdown" href="#" id="presse"
+                      data-reload>Presse</a></li>
+                  <li class="navbar-li-dropdown"><a class="navbar-txt-dropdown" href="#" id="audiosamples"
+                      data-reload>Video & Audio Samples</a></li>
+                </ul>
+              </li>
+              <li class="navbar-li"><a href="vakhtang.html" id="vakhtang" class="navbar-txt" data-reload>Vakhtang</a>
+                <ul class="navbar-menu-dropdown">
+                  <li class="navbar-li-dropdown"><a class="navbar-txt-dropdown" href="#" id="biography"
+                      data-reload>Biography</a></li>
+                  <li class="navbar-li-dropdown"><a class="navbar-txt-dropdown" href="#" id="photos"
+                      data-reload>Photos</a></li>
+                  <li class="navbar-li-dropdown"><a class="navbar-txt-dropdown" href="#" id="manuscripts"
+                      data-reload>Manuscripts</a></li>
+                  <li class="navbar-li-dropdown"><a class="navbar-txt-dropdown" href="#" id="presse"
+                      data-reload>Presse</a></li>
+                  <li class="navbar-li-dropdown"><a class="navbar-txt-dropdown" href="#" id="audiosamples"
+                      data-reload>Video & Audio Samples</a></li>
+                </ul>
+              </li>
+              <li class="navbar-li"><a href="foundation.html" class="selected-nav-li" id="foundation"
+                  data-reload>Foundation</a>
+                <ul class="navbar-menu-dropdown">
+                  <li class="navbar-li-dropdown"><a class="navbar-txt-dropdown js--scroll-to-information" href="#"
+                      id="information" data-reload>Information</a></li>
+                  <li class="navbar-li-dropdown"><a class="navbar-txt-dropdown js--scroll-to-photos" href="#"
+                      id="photos" data-reload>Photos</a></li>
+                  <li class="navbar-li-dropdown"><a class="navbar-txt-dropdown js--scroll-to-team" href="#" id="team"
+                      data-reload>Team</a></li>
+                </ul>
+              </li>
+              <li class="navbar-li"><a href="projects.html" class="navbar-txt" id="projects" data-reload>Projects</a>
+              </li>
+              <li class="navbar-li"><a href="contact.html" class="navbar-txt" id="contact" data-reload>Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-switch-btn">
+          <a data-lang class="switch-btn btn--eng">ENG</a>
+          <span class="switch-btn-line">/</span>
+          <a data-lang class="switch-btn btn--geo">GEO</a>
+        </div>
+      </div>
+
+    </div>
+    <!-- Responsive Navbar -->
+    <div class="responsive-header-container">
+      <div class="header-content-left">
+        <a href="index.html" class="header-main-logo">
+          <h3 class="logo">M. fund</h3>
+        </a>
+      </div>
+      <div class="header-switch-btn">
+        <a data-lang class="switch-btn btn--eng">ENG</a>
+        <span class="switch-btn-line">/</span>
+        <a data-lang class="switch-btn btn--geo">GEO</a>
+      </div>
+      <nav class="header__nav nav-bar">
+        <div class="toggle-menu">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+        </div>
+        <ul class="responsive-navbar-menu">
+          <li class="responsive-navbar-li"><a href="alex.html" class="responsive-navbar-li-txt" id="alexi"
+              data-reload>Alexi</a>
+            <ul class="responsive-nav-dropdown">
+              <li class="responsive-dropdown-li"><a class="responsive-li-txt" href="#" id="biography"
+                  data-reload>Biography</a></li>
+              <li class="responsive-dropdown-li"><a class="responsive-li-txt" href="#" id="photos"
+                  data-reload>Photos</a></li>
+              <li class="responsive-dropdown-li"><a class="responsive-li-txt" href="#" id="manuscripts"
+                  data-reload>Manuscripts</a></li>
+              <li class="responsive-dropdown-li"><a class="responsive-li-txt" href="#" id="presse"
+                  data-reload>Presse</a></li>
+              <li class="responsive-dropdown-li"><a class="responsive-li-txt" href="#" id="audiosamples"
+                  data-reload>Video & Audio Samples</a></li>
+            </ul>
+          </li>
+          <li class="responsive-navbar-li"><a href="vakhtang.html" class="responsive-navbar-li-txt" id="vakhtang"
+              data-reload>Vakhtang</a>
+            <ul class="responsive-nav-dropdown">
+              <li class="responsive-dropdown-li"><a class="responsive-li-txt" href="#" id="biography"
+                  data-reload>Biography</a></li>
+              <li class="responsive-dropdown-li"><a class="responsive-li-txt" href="#" id="photos"
+                  data-reload>Photos</a></li>
+              <li class="responsive-dropdown-li"><a class="responsive-li-txt" href="#" id="manuscripts"
+                  data-reload>Manuscripts</a></li>
+              <li class="responsive-dropdown-li"><a class="responsive-li-txt" href="#" id="presse"
+                  data-reload>Presse</a></li>
+              <li class="responsive-dropdown-li"><a class="responsive-li-txt" href="#" id="audiosamples"
+                  data-reload>Video & Audio</a></li>
+            </ul>
+          </li>
+          <li class="responsive-navbar-li"><a href="foundation.html" class="responsive-navbar-li-txt" id="foundation"
+              data-reload>Foundation</a>
+            <ul class="responsive-nav-dropdown">
+              <li class="responsive-dropdown-li"><a class="responsive-li-txt js--scroll-to-information" href="#"
+                  id="information" data-reload>Information</a></li>
+              <li class="responsive-dropdown-li"><a class="responsive-li-txt js--scroll-to-photos" href="#" id="photos"
+                  data-reload>Photos</a></li>
+              <li class="responsive-dropdown-li"><a class="responsive-li-txt js--scroll-to-team" href="#" id="team"
+                  data-reload>Team</a></li>
+            </ul>
+          </li>
+          <li class="responsive-navbar-li"><a href="projects.html" class="responsive-navbar-li-txt" id="projects"
+              data-reload>Projects</a></li>
+          <li class="responsive-navbar-li"><a href="contact.html" class="responsive-navbar-li-txt" id="contact"
+              data-reload>Contact</a></li>
+        </ul>
+      </nav>
+    </div>
     <!-- Responsive Navbar End -->
-    </header>
-    <section>
-      <div class="foundation-section">
-        <div class="head-section-left">
-            <img src="images/FondationCover.png" alt="Foundation Cover" class="foundation-section-img">
-        </div>
-        <div class="foundation-heading-box">
-            <h2 class="foundation-headline" id="foundation" data-reload>Foundation</h2>
-        </div>
+  </header>
+  <section>
+    <div class="foundation-section">
+      <div class="head-section-left">
+        <img src="images/1982.MOSCOW STUDIO.4. AM.& VM..jpg" alt="Foundation Cover" class="foundation-section-img">
+      </div>
+      <div class="foundation-heading-box">
+        <h2 class="foundation-headline" id="foundation" data-reload>Foundation</h2>
+      </div>
     </div>
 
     <div class="grey-box personal-page-box">
       <div class="first-article-box-content box-container js--section-information">
         <div class="article-headline">
-          <h3 class="article-headline-txt" id="aboutus" data-reload>About Us</h3>
+          <h3 class="article-headline-txt" id="aboutus" >About Foundation</h3>
         </div>
         <div class="personal-pg-txt-box">
-          <p class="about-us-txt">A foundation (also a charitable foundation) is a category of nonprofit organization or charitable trust that typically provides funding and support for other charitable organizations through grants, but may also engage directly in charitable activities. Foundations include public charitable foundations, such as community foundations, and private foundation, which are typically endowed by an individual or family. However, the term "foundation" may also be used by organizations that are not involved in public grantmaking.</p>
-          <p class="about-us-txt">Legal entities existing under the status of "foundations" have a wide diversity of structures and purposes. Nevertheless, there are some common structural elements.</p>
+          <p class="about-us-txt">The foundation plans to organize a number of musical activities, which will be
+            dominated by
+            the Alexi Matchavariani Composers' Competition, which is planned to take place in Borjomi.
+            Information about the Foundation Board members can be found on the Foundation's website,
+            as well as the Foundation's goals and upcoming activities.
+            According to the charter of the foundation, the financial activities of the foundation will be
+            transparent and accessible.
+            The main goal of the foundation is to provide the public with a deep, aesthetically perfect
+            musical level through the Alexi Matchavariani International Composers’ Competition.
+            Motivate the compositional work, which has been experiencing a crisis in the first quarter of
+            the XXI century.
+            A sound, in general, has a special mission. According to the Old Testament, the universe was
+            created by the word, or sound. In Hinduism, the sound "Om" created the cosmos and set it in
+            motion, whereas the universe evolved as a result of Krishna’s flute sounds. The God of Israel
+            spoke with sounds to his children, while Kabbalah was made of ideal sounds.
+            In ancient times 7 Greek vowels symbolized 7 souls or 7 celestial spheres and 7 celestial
+            bodies.
+            The Gnostics and later traditions, such as the teaching of Mithras, used sounds as ideal
+            acoustic forms in their rituals.
+            The great philosopher Plato states:
+            "Music gives soul to the universe, wings to the mind, flight to the imagination, and charm
+            and gaiety to life and to everything.”
+            And his teacher, Socrates believes that youth should be brought up with music and training to
+            have a rich soul and strong body. Socrates believed that music is a philosophical
+            phenomenon, or the music of truth.
+            Ludwig van Beethoven believed that music is a more sublime inspiration than a philosophical
+            one. Friedrich Nietzsche, a friend and admirer of Richard Wagner, states: “In a society of the
+            good, kindness is hereditary and malicious roots cannot emerge from a good soil. Without
+            music, life would be a mistake." Thus, I believe that there is constant music and music for an
+            hour, i.e., temporary music.
+            As far back as 500 BC, the great Chinese Confucius explained: “We must know music. . . Its
+            sounds should be harmonious and expressive. . . The music in Shao is beautiful and at the
+            same time gracious and noble, while the music in Van is wonderful, but it lacks integrity."
+            The almost modern Pythagoreans of Confucius treated things with music, calling it celestial
+            grace, which is invisibly great and beautiful.
+            The ancient Greeks believed that the "dodeca“ or number - XII (12) is the Messianic
+            expectation number. As early as the beginning of the 20th century, in 1913, the great Arnold
+            Schoenber introduced a new system of 12-tone system called "Dodecaphony" to the world.
+            The 12-tone system has replaced the pre-existing 7-tone notation system. The ancient Greeks
+            believed that through catharsis a person is purified and healed, while the purification-healing
+            of the human soul takes place through the Greek theatrical tragedy, in which the main role is
+            played by the choir and its accompanying instrumental music.
+            Much later, when the Ottomans invaded Constantinople, the Greek-Byzantine intellectual
+            elite living there left Constantinople, and most of them left for Italy, particularly Tuscany, where
+            Florence sparkled in beauty of Renaissance - where geniuses, such as Dante, Petrasca,
+            Giotto, Masaccio, Brunelleschi, and Boccaccio had already existed, and during the
+            emigration of Greeks to Tuscany, they were welcomed by: Piero della Francesca, Pietro
+            Perugio, Botticelli, Titian, and the Italian Christopher Columbus was sailing across the
+            Atlantic Ocean.
+            The Byzantines brought the traditions of ancient Greek theater and chorus to Tuscany, as a
+            result of which these traditions merged with the nature of Italian singing, and the opera was
+            born in Tuscany, at the Palace of Count of Bardi, which became the cradle of classical music.
+            The first performers of this new and unique form of art were composers: Jacopo Peri,
+            Antonio Cesti, Michelangelo Galilei - Galileo-Galilei's brother and the first opera giant,
+            Claudio Monteverdi, who began his work based on the principle of Greek theater and chorus.
+            It was his opera Orpheus (1609) that Galileo Galilei arranged stage mechanics for. Not only
+            Galileo Galilei was interested in music, Newton, Leibniz, Faraday, Kepler, Einstein and
+            many other famous scientists can be added to this list.
+            Opera art has gone through the most important stages of creativity of great reformers:
+            Christoph Willibald Gluck, Handel, Bach, Mozart, and Beethoven; music came to a great
+            stage - Richard Wagner’s era, which exhausted the capabilities of the tonal, 7-tone system
+            and thus gave rise to the 12-tone sound system, which, in time, coincides with Albert
+            Einstein's announcement of the "theory of relativity" and when Niels Bohr raised up the
+            model of atoms, thus beginning a new era in physics, at the same time Marie Curie received
+            her second Nobel Prize, this time in chemistry. This is the beginning of the First World War
+            and at the same time, in 1913, Alexi Matchavariani was born, who honored Georgia
+            worldwide. It should be noted that the first attempt of staging Zakaria Paliashvili's opera
+            "Absalom and Ether" took place in 1913. And in 1919 the full premiere of the opera took
+            place. During its development, music gave birth to the largest number of authors, and already
+            in the XVIII century the number of high-level authors amounted to dozen, and in the XIX
+            century their number increased. This is not a matter of quantity; a large number of
+            masterpieces were created during this period and the quality speaks for them.
+            Quantitative and qualitative culmination occurred in the first quarter of the twentieth century
+            and continued automatically until the mid-twentieth century, and geographically it comprised
+            Europe, North and South America, Russia, Asia and Georgia.
+            From the sixties onwards, new trends emerged slowly and then rapidly, the process of
+            complete commercialization of music began, deep and meaningful music began to retreat and
+            the elements of brilliant jazz music and intonations began to emerge, and later on, came the
+            cheap, mass-produced "sounds" that were contrasted with the insignificant sounds built on
+            mathematical constructions, which caused confusion on the compositional track, only to
+            individuals with strong personalities, such as M. Ravel, I. Stravinsky,
+            D. Shostakovich, L. Bernstein, D. Milhaud, O. Messiaen and a few others continued on their
+            way by using the old and the new and their own identity.
+            One of such authors is Alexi Matchavariani, who on the one hand used the whole arsenal of
+            innovative music of the XX century, including a 12-tone system, which makes him unique
+            among the leading representatives of the Georgian composition school. He also mastered the
+            fascinating elements of the new American music and at the same time preserved the </p>
+          <p class="about-us-txt">where Florence sparkled in beauty of Renaissance - where geniuses, such as Dante,
+            Petrasca,
+            Giotto, Masaccio, Brunelleschi, and Boccaccio had already existed, and during the
+            emigration of Greeks to Tuscany, they were welcomed by: Piero della Francesca, Pietro
+            Perugio, Botticelli, Titian, and the Italian Christopher Columbus was sailing across the
+            Atlantic Ocean.
+            The Byzantines brought the traditions of ancient Greek theater and chorus to Tuscany, as a
+            result of which these traditions merged with the nature of Italian singing, and the opera was
+            born in Tuscany, at the Palace of Count of Bardi, which became the cradle of classical music.
+            The first performers of this new and unique form of art were composers: Jacopo Peri,
+            Antonio Cesti, Michelangelo Galilei - Galileo-Galilei's brother and the first opera giant,
+            Claudio Monteverdi, who began his work based on the principle of Greek theater and chorus.
+            It was his opera Orpheus (1609) that Galileo Galilei arranged stage mechanics for. Not only
+            Galileo Galilei was interested in music, Newton, Leibniz, Faraday, Kepler, Einstein and
+            many other famous scientists can be added to this list.
+            Opera art has gone through the most important stages of creativity of great reformers:
+            Christoph Willibald Gluck, Handel, Bach, Mozart, and Beethoven; music came to a great
+            stage - Richard Wagner’s era, which exhausted the capabilities of the tonal, 7-tone system
+            and thus gave rise to the 12-tone sound system, which, in time, coincides with Albert
+            Einstein's announcement of the "theory of relativity" and when Niels Bohr raised up the
+            model of atoms, thus beginning a new era in physics, at the same time Marie Curie received
+            her second Nobel Prize, this time in chemistry. This is the beginning of the First World War
+            and at the same time, in 1913, Alexi Matchavariani was born, who honored Georgia
+            worldwide. It should be noted that the first attempt of staging Zakaria Paliashvili's opera
+            "Absalom and Ether" took place in 1913. And in 1919 the full premiere of the opera took
+            place. During its development, music gave birth to the largest number of authors, and already
+            in the XVIII century the number of high-level authors amounted to dozen, and in the XIX
+            century their number increased. This is not a matter of quantity; a large number of
+            masterpieces were created during this period and the quality speaks for them.
+            Quantitative and qualitative culmination occurred in the first quarter of the twentieth century
+            and continued automatically until the mid-twentieth century, and geographically it comprised
+            Europe, North and South America, Russia, Asia and Georgia.
+            From the sixties onwards, new trends emerged slowly and then rapidly, the process of
+            complete commercialization of music began, deep and meaningful music began to retreat and
+            the elements of brilliant jazz music and intonations began to emerge, and later on, came the
+            cheap, mass-produced "sounds" that were contrasted with the insignificant sounds built on
+            mathematical constructions, which caused confusion on the compositional track, only to
+            individuals with strong personalities, such as M. Ravel, I. Stravinsky,
+            D. Shostakovich, L. Bernstein, D. Milhaud, O. Messiaen and a few others continued on their
+            way by using the old and the new and their own identity.
+            One of such authors is Alexi Matchavariani, who on the one hand used the whole arsenal of
+            innovative music of the XX century, including a 12-tone system, which makes him unique
+            among the leading representatives of the Georgian composition school. He also mastered the
+            fascinating elements of the new American music and at the same time preserved the
+          foundations and elements of the ancient Georgian polyphony in his work, blended all this in
+his romantic nature, and all of this gave rise to the new Georgian school of composition.
+Entertaining, often pleasant music that does not preclude a good dinner accompanied by wine
+or champagne, as well as dancing mood, which is pleasant and sometimes very necessary,
+could not organically share the essence of serious and deep music, although the use of the
+above elements in serious music is acceptable.
+The great popularity of mass music has confused a number of serious music authors, which is
+logical, because we know the truth that the masses are not interested in philosophy, great and
+deep literature, such poetry, which together with music represent the source of spiritual
+wealth of humanity and without which, the process of exile and spiritual impoverishment
+begins.
+After the above-mentioned Greeks, the function of "catharsis" was performed by a number of
+Renaissance figures in the Middle Ages, and later by the works of Shakespeare, Goethe,
+Schiller and many others, whose works have become the source of inspiration for many great
+composers. This is the process of mutual enrichment, when a great writer inspires a great
+composer, and many examples of this comprise the works of Alexi Matchavariani, dominated
+by Shakespeare: "Othello", "Hamlet", " The Taming of the Shrew", Rustaveli: "The Knight in
+the Panther's Skin", Greek mythology: "Medea", literary-poetic sources of Vazha Pshavela,
+Ilia Chavchavadze, Nikoloz Baratashvili, Galaktion Tabidze, Gogla Leonidze. We want to
+focus on this exact aesthetics during the A. Matchavariani International Composers'
+Competition.
+Göthe stated in Faust: “ A man cannot feel the devil even when he is in his clutches.
+Everything that glitters is not gold." Considering all the above and many more not mentioned,
+I believe that an inspiration is necessary in order to get the composition school out of the
+impasse. I see A. Matchavarani competition as such inspiration, the location of which I see in
+Borjomi, with which Alexi Matchavariani had a direct connection.
+Briefly about Borjomi, where muscular traditions originated long before the Soviet period.
+The greatest Russian composer, Peter Tchaikovsky is directly connected with Borjomi, who
+created a number of masterpieces there. Later, the annual series of concerts of the Symphonic
+Orchestra began in Borjomi, in which prominent Georgian and non-Georgian musicians took
+part. Chamber music concerts were also held there. In the sixties of the XX century, when
+Alexi Matchavariani was awarded the title of People's Artist of the USSR, State and Stalin
+awards, at the Mariinsky Theater in St. Petersburg, Paris, Tokyo, New York, etc., his ballet
+"Othello", his violin concerto and many other creations when he was the chairman of the
+Georgian Composers' Union, the secretary of the USSR Composers' Union, the USSR
+supreme government brought various important figures to see “Othello” to the Moscow
+
+Grand Theater: Queen Elizabeth of Belgium, the UN Secretary General and such high-
+ranking guests; Alexi Matchavariani had a chance to meet Khrushchev, as a result of which,
+
+with his initiative, large and small halls of the Philharmonic Concert Hall were built in Tbilisi
+(today the big hall is named after Alexi Matchavariani). In Sinopi – there was a composers’
+summer resort near Sokhumi with a hall and as a final chord, a composers' summer complex
+on the Borjomi plateau, with a tall building, cottages and a concert hall. Liana Isakadze held a
+festival in the above-mentioned hall at the end of the last century and in the early years of the
+XXI century.
+
+Thus, it would be logical to establish
+Thus, it would be logical to establish Alexi Matchavariani International Composers'
+Competition in Borjomi, which will featuring a high-level international jury.
+The letter is accompanied by biographies of Alexi and Vakhtang Matchavariani and the
+international press, both in Georgian and English languages.
+Yours faithfully,
+Vakhtang Matchavariani
+
+"At this point, please email us at: legatoart@outlook.com
+You will be notified of the new address in the event of a change. "
+</p>
 
           <ul class="about-us-ul">
-            <li class="about-us-txt">Chart of a foundation</li>
-            <li class="about-us-txt">Purpose of the foundation</li>
-            <li class="about-us-txt">Economic activity</li>
-            <li class="about-us-txt">Supervision and management provisions</li>
-            <li class="about-us-txt">Accountability and auditing provisions</li>
+            <li class="about-us-txt">Yours faithfully,</li>
+            <li class="about-us-txt">Vakhtang Matchavariani</li>
+            <li class="about-us-txt">"At this point, please email us at: legatoart@outlook.com</li>
+            <li class="about-us-txt">You will be notified of the new address in the event of a change. "</li>
           </ul>
         </div>
       </div>
-  </div>
-  <div class="personal-page-photos grey-box js--section-photos">
-    <div class="photos-headline box-container">
-        <h3 class="photos-headline-txt personal-pg-head-txt" id="photos" data-reload>Photos</h3>
     </div>
-    <div class="personal-page-photos-box box-container">
-      <ul class="gallery-showcase">
-        <li class="gallery-showcase-li">
-          <figure class="gallery-photo">
-            <img src="images/1Photos.png" class="gallery-img" alt="Vakhtang Matchavariani">
-          </figure>
-        </li>
-        <li class="gallery-showcase-li">
-          <figure class="gallery-photo">
-            <img src="images/2Photos2.png" class="gallery-img" alt="Vakhtang Matchavariani">
-          </figure>
-        </li>
-        <li class="gallery-showcase-li">
-          <figure class="gallery-photo">
-            <img src="images/3Photos.png" class="gallery-img" alt="Vakhtang Matchavariani">
-          </figure>
-        </li>
-        <li class="gallery-showcase-li">
-          <figure class="gallery-photo">
-            <img src="images/4Photos.png" class="gallery-img" alt="Vakhtang Matchavariani">
-          </figure>
-        </li>
-      </ul>
-      <ul class="gallery-showcase">
-        <li class="gallery-showcase-li">
-          <figure class="gallery-photo">
-            <img src="images/5Photos.png" class="gallery-img" alt="Vakhtang Matchavariani">
-          </figure>
-        </li>
-        <li class="gallery-showcase-li">
-          <figure class="gallery-photo">
-            <img src="images/6Photos.png" class="gallery-img" alt="Vakhtang Matchavariani">
-          </figure>
-        </li>
-        <li class="gallery-showcase-li">
-          <figure class="gallery-photo">
-            <img src="images/7Photos.png" class="gallery-img" alt="Vakhtang Matchavariani">
-          </figure>
-        </li>
-        <li class="gallery-showcase-li">
-          <figure class="gallery-photo">
-            <img src="images/8Photos.png" class="gallery-img" alt="Vakhtang Matchavariani">
-          </figure>
-        </li>
-      </ul>
+    <div class="personal-page-photos grey-box js--section-photos">
+      <div class="photos-headline box-container">
+        <h3 class="photos-headline-txt personal-pg-head-txt" id="photos" data-reload>Photos</h3>
+      </div>
+      <div class="personal-page-photos-box box-container">
+        <ul class="gallery-showcase">
+          <li class="gallery-showcase-li">
+            <figure class="gallery-photo">
+              <img src="images/1Photos.png" class="gallery-img" alt="Vakhtang Matchavariani">
+            </figure>
+          </li>
+          <li class="gallery-showcase-li">
+            <figure class="gallery-photo">
+              <img src="images/2Photos2.png" class="gallery-img" alt="Vakhtang Matchavariani">
+            </figure>
+          </li>
+          <li class="gallery-showcase-li">
+            <figure class="gallery-photo">
+              <img src="images/3Photos.png" class="gallery-img" alt="Vakhtang Matchavariani">
+            </figure>
+          </li>
+          <li class="gallery-showcase-li">
+            <figure class="gallery-photo">
+              <img src="images/4Photos.png" class="gallery-img" alt="Vakhtang Matchavariani">
+            </figure>
+          </li>
+        </ul>
+        <ul class="gallery-showcase">
+          <li class="gallery-showcase-li">
+            <figure class="gallery-photo">
+              <img src="images/5Photos.png" class="gallery-img" alt="Vakhtang Matchavariani">
+            </figure>
+          </li>
+          <li class="gallery-showcase-li">
+            <figure class="gallery-photo">
+              <img src="images/6Photos.png" class="gallery-img" alt="Vakhtang Matchavariani">
+            </figure>
+          </li>
+          <li class="gallery-showcase-li">
+            <figure class="gallery-photo">
+              <img src="images/7Photos.png" class="gallery-img" alt="Vakhtang Matchavariani">
+            </figure>
+          </li>
+          <li class="gallery-showcase-li">
+            <figure class="gallery-photo">
+              <img src="images/8Photos.png" class="gallery-img" alt="Vakhtang Matchavariani">
+            </figure>
+          </li>
+        </ul>
         <div class="btn--box">
           <div class="article-btn">
-              <a href="gallery3.html" class="article-main-btn" id="learnmore" data-reload>Learn More</a>
-              <div class="arrow-line">
-                <div class="first-article-line-two">
-                  <i class="fas fa-caret-right arrow"></i>
-                </div>
+            <a href="gallery3.html" class="article-main-btn" id="learnmore" data-reload>Learn More</a>
+            <div class="arrow-line">
+              <div class="first-article-line-two">
+                <i class="fas fa-caret-right arrow"></i>
               </div>
-              <div class="first-line"></div>
+            </div>
+            <div class="first-line"></div>
+          </div>
         </div>
+      </div>
+    </div>
+
+    <!-- team-->
+
+    <div class="personal-page-photos grey-box js--section-team">
+      <div class="team-section-basic-content box-container">
+        <div class="photos-headline">
+          <h3 class="photos-headline-txt personal-pg-head-txt" id="team">Board Members</h3>
+        </div>
+        <div class="team-section">
+          <div class="team-section-img">
+            <img src="images/Team1.png" alt="team first member" class="team-pg-img">
+          </div>
+          <div class="team-section-txt">
+            <p class="team-section-headline" id="namelastname" >A.Toradze</p>
+            <p class="team-section-text-area" id="teammemberbiography" >
+              General director of H.Sikorsky music edition in Hamburg
+            </p>
+          </div>
+          
+        </div>
+        <div class="team-section">
+          <div class="team-section-img">
+            <img src="images/Team2.png" alt="team first member" class="team-pg-img">
+          </div>
+          <div class="team-section-txt">
+            <p class="team-section-headline" id="namelastname" > C.Emborg</p>
+            <p class="team-section-text-area" id="teammemberbiography">
+              General director of H.Sikorsky music edition in Hamburg
+              </p>
+          </div>
+        </div>
+        <div class="team-section">
+          <div class="team-section-img">
+            <img src="images/Team3.png" alt="team first member" class="team-pg-img">
+          </div>
+          <div class="team-section-txt">
+            <p class="team-section-headline" id="namelastname" >H.U.Duffek </p>
+            <p class="team-section-text-area" id="teammemberbiography" >
+              General director of H.Sikorsky music edition in Hamburg
+             </p>
+          </div>
+        </div>
+        <div class="team-section">
+          <div class="team-section-img">
+            <img src="images/Team3.png" alt="team first member" class="team-pg-img">
+          </div>
+          <div class="team-section-txt">
+            <p class="team-section-headline" id="namelastname" >J.Chkaidze</p>
+            <p class="team-section-text-area" id="teammemberbiography" >
+              General director of H.Sikorsky music edition in Hamburg
+            </p>
+          </div>
+        </div>
+        <div class="team-section">
+          <div class="team-section-img">
+            <img src="images/Team3.png" alt="team first member" class="team-pg-img">
+          </div>
+          <div class="team-section-txt">
+            <p class="team-section-headline" id="namelastname">O.Margania, 
+            </p>
+            <p class="team-section-text-area" id="teammemberbiography" >
+              General director of H.Sikorsky music edition in Hamburg</p>
+          </div>
+        </div>
+        <div class="team-section">
+          <div class="team-section-img">
+            <img src="images/Team3.png" alt="team first member" class="team-pg-img">
+          </div>
+          <div class="team-section-txt">
+            <p class="team-section-headline" id="namelastname" > I.Khorbaladze</p>
+            <p class="team-section-text-area" id="teammemberbiography" >
+              General director of H.Sikorsky music edition in Hamburg
+            
+              </p>
+          </div>
+        </div>
+        <div class="team-section">
+          <div class="team-section-img">
+            <img src="images/Team3.png" alt="team first member" class="team-pg-img">
+          </div>
+          <div class="team-section-txt">
+            <p class="team-section-headline" id="namelastname" >N.Kiknadze, </p>
+            <p class="team-section-text-area" id="teammemberbiography">
+              General director of H.Sikorsky music edition in Hamburgs
+              </p>
+          </div>
         </div>
       </div>
-  </div>
 
-  <!-- team-->
-
-  <div class="personal-page-photos grey-box js--section-team">
-    <div class="team-section-basic-content box-container">
-    <div class="photos-headline">
-        <h3 class="photos-headline-txt personal-pg-head-txt" id="team" data-reload>team</h3>
-    </div>
-    <div class="team-section">
-      <div class="team-section-img">
-          <img src="images/Team1.png" alt="team first member" class="team-pg-img">
-      </div>
-      <div class="team-section-txt">
-          <p class="team-section-headline" id="namelastname" data-reload>Name Lastname</p>
-          <p class="team-section-text-area" id="teammemberbiography" data-reload>A biography, or simply bio, is a detailed description of a person's life. It involves more than just the basic facts like education, work, relationships, and death; it portrays a person's experience of these life events. Unlike a profile or curriculum vitae (résumé), a biography presents a subject's life story, highlighting various aspects of his or her life, including intimate details of experience, and may include an analysis of the subject's personality</p>
-      </div>
-  </div>
-  <div class="team-section">
-    <div class="team-section-img">
-        <img src="images/Team2.png" alt="team first member" class="team-pg-img">
-    </div>
-    <div class="team-section-txt">
-        <p class="team-section-headline" id="namelastname" data-reload>Name Lastname</p>
-        <p class="team-section-text-area" id="teammemberbiography" data-reload>A biography, or simply bio, is a detailed description of a person's life. It involves more than just the basic facts like education, work, relationships, and death; it portrays a person's experience of these life events. Unlike a profile or curriculum vitae (résumé), a biography presents a subject's life story, highlighting various aspects of his or her life, including intimate details of experience, and may include an analysis of the subject's personality</p>
-    </div>
-</div>
-<div class="team-section">
-  <div class="team-section-img">
-      <img src="images/Team3.png" alt="team first member" class="team-pg-img">
-  </div>
-  <div class="team-section-txt">
-      <p class="team-section-headline" id="namelastname" data-reload>Name Lastname</p>
-      <p class="team-section-text-area" id="teammemberbiography" data-reload>A biography, or simply bio, is a detailed description of a person's life. It involves more than just the basic facts like education, work, relationships, and death; it portrays a person's experience of these life events. Unlike a profile or curriculum vitae (résumé), a biography presents a subject's life story, highlighting various aspects of his or her life, including intimate details of experience, and may include an analysis of the subject's personality</p>
-  </div>
-  </div>
-  </div>
-  
-  <!-- reponsive team section-->
-  <div class="team-section-responsive">
-    <div class="carousel">
-      <button class="carousel__button previous" id="previous"><</button>
-      <div class="carousel__images">
-        <div class="carousel-box">
-          <img src="images/Team2.png" alt="Team Member Image">
-          <p class="team-member-name" id="namelastname" data-reload>Name Lastname</p>
-          <p class="team-member-bio-para">A Biography, Or Simply Bio, Is A Detailed Description Of A Person's Life. It Involves More Than Just The Basic Facts Like Education, Work, Relationships, And Death; It Portrays A Person's Experience Of These Life Events. Unlike A Profile Or Curriculum Vitae (Résumé), A Biography Presents A Subject's Life Story, Highlighting Various Aspects Of His Or Her Life, Including Intimate Details Of Experience, And May Include An Analysis Of The Subject's Personality</p>
-        </div> 
-        <div class="carousel-box">
-          <img src="images/Team1.png" alt="Team Member Image">
-          <p class="team-member-name" id="namelastname" data-reload>Name Lastname</p>
-          <p class="team-member-bio-para">A Biography, Or Simply Bio, Is A Detailed Description Of A Person's Life. It Involves More Than Just The Basic Facts Like Education, Work, Relationships, And Death; It Portrays A Person's Experience Of These Life Events. Unlike A Profile Or Curriculum Vitae (Résumé), A Biography Presents A Subject's Life Story, Highlighting Various Aspects Of His Or Her Life, Including Intimate Details Of Experience, And May Include An Analysis Of The Subject's Personality</p>
+      <!-- reponsive team section-->
+      <div class="team-section-responsive">
+        <div class="carousel">
+          <button class="carousel__button previous" id="previous">
+            <</button> <div class="carousel__images">
+              <div class="carousel-box">
+                <img src="images/Team2.png" alt="Team Member Image">
+                <p class="team-member-name" id="namelastname" >V.Matchavariani</p>
+                <p class="team-member-bio-para">
+                  General director of H.Sikorsky music edition in Hamburgs
+                </p>
+              </div>
+              <div class="carousel-box">
+                <img src="images/Team1.png" alt="Team Member Image">
+                <p class="team-member-name" id="namelastname" data-reload>Name Lastname</p>
+                <p class="team-member-bio-para">A Biography, Or Simply Bio, Is A Detailed Description Of A Person's
+                  Life. It Involves More Than Just The Basic Facts Like Education, Work, Relationships, And Death; It
+                  Portrays A Person's Experience Of These Life Events. Unlike A Profile Or Curriculum Vitae (Résumé), A
+                  Biography Presents A Subject's Life Story, Highlighting Various Aspects Of His Or Her Life, Including
+                  Intimate Details Of Experience, And May Include An Analysis Of The Subject's Personality</p>
+              </div>
+              <div class="carousel-box">
+                <img src="images/Team3.png" alt="Team Member Image">
+                <p class="team-member-name" id="namelastname" data-reload>Name Lastname</p>
+                <p class="team-member-bio-para">A Biography, Or Simply Bio, Is A Detailed Description Of A Person's
+                  Life. It Involves More Than Just The Basic Facts Like Education, Work, Relationships, And Death; It
+                  Portrays A Person's Experience Of These Life Events. Unlike A Profile Or Curriculum Vitae (Résumé), A
+                  Biography Presents A Subject's Life Story, Highlighting Various Aspects Of His Or Her Life, Including
+                  Intimate Details Of Experience, And May Include An Analysis Of The Subject's Personality</p>
+              </div>
+              
         </div>
-        <div class="carousel-box">
-          <img src="images/Team3.png" alt="Team Member Image">
-          <p class="team-member-name" id="namelastname" data-reload>Name Lastname</p>
-          <p class="team-member-bio-para">A Biography, Or Simply Bio, Is A Detailed Description Of A Person's Life. It Involves More Than Just The Basic Facts Like Education, Work, Relationships, And Death; It Portrays A Person's Experience Of These Life Events. Unlike A Profile Or Curriculum Vitae (Résumé), A Biography Presents A Subject's Life Story, Highlighting Various Aspects Of His Or Her Life, Including Intimate Details Of Experience, And May Include An Analysis Of The Subject's Personality</p>
-        </div>   
+
+        <button class="carousel__button next" id="next">></button>
       </div>
 
-      <button class="carousel__button next" id="next">></button>
-  </div> 
+    </div>
 
-  </div>
-    
-    
-    
-    
-    
+
+
+
+
     <!-- <div class="team-section-headline">
       <h3 class="team-section-headline-txt" id="team" data-reload>Team</h3>
     </div>
@@ -285,70 +569,71 @@
     </div> -->
 
 
-  <!-- responsive team section end-->
-  </div>
-    </section>
-    
+    <!-- responsive team section end-->
+    </div>
+  </section>
 
-    <footer class="footer-main">
-      <div class="footer-container">
-        <div class="item item--1">
-          <img src="images/email.svg" alt="email-icon" class="footer-img">
-          <a href="mailto:Namelastname@Gmail.com" class="footer-txt">Namelastname@Gmail.com</a>
-        </div>
-        <div class="item item--2">
-          <img src="images/mobile.svg" alt="mobile-icon" class="footer-img">
-          <a href="tel:0322674839" class="footer-txt">0322674839</a>
-        </div>
-        <div class="item item--3">
-          <img src="images/location.svg" alt="location-icon" class="footer-img">
-          <p class="footer-txt" id="location" data-reload>Location Street</p>
-        </div>
-        <div class="item item--4">
-          <div class="soc-media-icons">
-            <a href="#">
+
+  <footer class="footer-main">
+    <div class="footer-container">
+      <div class="item item--1">
+        <img src="images/email.svg" alt="email-icon" class="footer-img">
+        <a href="mailto:Namelastname@Gmail.com" class="footer-txt">Namelastname@Gmail.com</a>
+      </div>
+      <div class="item item--2">
+        <img src="images/mobile.svg" alt="mobile-icon" class="footer-img">
+        <a href="tel:0322674839" class="footer-txt">0322674839</a>
+      </div>
+      <div class="item item--3">
+        <img src="images/location.svg" alt="location-icon" class="footer-img">
+        <p class="footer-txt" id="location" data-reload>Location Street</p>
+      </div>
+      <div class="item item--4">
+        <div class="soc-media-icons">
+          <a href="#">
             <img src="images/facebook-logo.svg" alt="fb-icon" class="footer-img">
           </a>
           <a href="#">
             <img src="images/youtube.svg" alt="youtube-icon" class="footer-img">
           </a>
-          </div>
-          <p class="footer-txt" id="socialmedia" data-reload>Social Media</p>
+        </div>
+        <p class="footer-txt" id="socialmedia" data-reload>Social Media</p>
+      </div>
+    </div>
+    <div class="footer-responsive-container">
+      <div class="footer-top-wrapper">
+        <div class="top-main-content">
+          <img src="images/email.svg" alt="email-icon" class="respo-footer-img">
+          <a href="mailto:Namelastname@Gmail.com" class="respo-footer-txt">Namelastname@Gmail.com</a>
+        </div>
+        <div class="top-main-content">
+          <img src="images/mobile.svg" alt="mobile-icon" class="respo-footer-img">
+          <a href="tel:0322674839" class="respo-footer-txt">0322674839</a>
+        </div>
+        <div class="top-main-content">
+          <img src="images/location.svg" alt="location-icon" class="respo-footer-img">
+          <p class="respo-footer-txt" id="location" data-reload>Location Street</p>
         </div>
       </div>
-      <div class="footer-responsive-container">
-        <div class="footer-top-wrapper">
-          <div class="top-main-content">
-            <img src="images/email.svg" alt="email-icon" class="respo-footer-img">
-            <a href="mailto:Namelastname@Gmail.com" class="respo-footer-txt">Namelastname@Gmail.com</a>    
-          </div>
-          <div class="top-main-content">
-            <img src="images/mobile.svg" alt="mobile-icon" class="respo-footer-img">
-            <a href="tel:0322674839" class="respo-footer-txt">0322674839</a>  
-          </div>
-          <div class="top-main-content">
-            <img src="images/location.svg" alt="location-icon" class="respo-footer-img">
-            <p class="respo-footer-txt" id="location" data-reload>Location Street</p>
-          </div>
-        </div>
-        <div class="footer-bottom-wrapper">
-          <div class="respo-soc-media-icons">
-            <a href="#">
+      <div class="footer-bottom-wrapper">
+        <div class="respo-soc-media-icons">
+          <a href="#">
             <img src="images/facebook-logo.svg" alt="fb-icon" class="footer-img">
           </a>
           <a href="#">
             <img src="images/youtube.svg" alt="youtube-icon" class="footer-img">
           </a>
-          </div>
-          <p class="respo-footer-txt" id="socialmedia" data-reload>Social Media</p>
         </div>
+        <p class="respo-footer-txt" id="socialmedia" data-reload>Social Media</p>
       </div>
-    </footer> 
-    
+    </div>
+  </footer>
 
 
 
-    <script src="js/jQuery.js"></script>
-    <script src="js/scripts.js"></script>
+
+  <script src="js/jQuery.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
+
 </html>

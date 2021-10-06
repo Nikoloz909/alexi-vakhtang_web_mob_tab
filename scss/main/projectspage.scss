@@ -4,8 +4,9 @@
 
 .projects-section-headline {
     font-family: 'Playfair Display';
-    font-size: $fontsize40;
+    font-size: 30px;
     color: $color01-blck;
+    margin-bottom: 30px;
 }
 
 .projects-section-box {
@@ -45,11 +46,15 @@
 
 .competition-description-area {
     width: 100%;
-    .competition-description-txt {
+    .competition-description-txt li {
         font-family: 'Poppins Thin', 'FiraGO Light';
         font-size: $fontsize16;
         color: $color01-blck;
         line-height: initial;
+        margin: 15px 0;
+        text-align: center;
+        // font-weight: bold;
+        font-size: 20px;
     }
 
 }
