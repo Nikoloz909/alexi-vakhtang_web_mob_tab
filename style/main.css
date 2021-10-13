@@ -980,9 +980,7 @@ section {
 
 .team-section {
   margin-top: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start; }
+  display: flex; }
 
 .team-section-img {
   margin-right: 20px; }

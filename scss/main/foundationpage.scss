@@ -38,7 +38,8 @@
 
 .team-section {
     margin-top: 40px;
-    @include flex;
+    // @include flex;
+    display: flex;
 }
     .team-section-img {
         margin-right: 20px;
